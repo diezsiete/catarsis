@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+        <title>{% block title %}Catarsis{% endblock %}</title>
+
+        {% block stylesheets %}
+            <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
+            <!-- Plugins -->
+            <link rel="stylesheet" href="{{ asset('css/plugins.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/MyFontsWebfontsKit.css') }}">
+
+            <link rel="stylesheet" href="{{ asset('css/style_two.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/catarsis.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+        <div class="animsition">
+            <!-- ************************ -->
+            <!--  GO TO TOP               -->
+            <!-- ************************ -->
+
+            <a href="#top" class="toTop">
+                <i class="fa fa-angle-up"></i>
+            </a>
+
+            <!-- ************************ -->
+            <!--   PAGE BORDER            -->
+            <!-- ************************ -->
+
+            <span class="frame-line animated top-frame"></span>
+            <span class="frame-line animated right-frame"></span>
+            <span class="frame-line animated bottom-frame"></span>
+            <span class="frame-line animated left-frame"></span>
+
+            <!-- ************************ -->
+            <!--   NAVBAR                 -->
+            <!-- ************************ -->
+
+            <div class="crazy-navbar">
+                <div class="container">
+
+                    <div class="crazy-logo">
+                        <a href="{{ path('home') }}"><img src="{{ asset('img/logo-catarsis-black.png') }}" alt="crazy-logo"></a>
+                    </div>
+                    <!-- End crazy-logo -->
+                    <nav class="crazy-nav">
+                        <ul class="sf-menu">
+                            <li class="{{ 'home'|current_menu_item }}">
+                                <a href="{{ path('home') }}" class="animsition-link">Home</a>
+                            </li>
+                            <li class="{{ 'nuestro_metodo'|current_menu_item }}">
+                                <a href="{{ path('nuestro_metodo') }}" class="animsition-link">Nuestro método</a>
+                            </li>
+                            <li class="{{ 'lo_que_hacemos'|current_menu_item }}">
+                                <a href="{{ path('lo_que_hacemos') }}" class="animsition-link">Lo que hacemos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="open-menu">
+                        <i class="burger-icon">
+                            <i></i>
+                        </i>
+                    </a>
+                </div>
+                <!-- End container -->
+                <div class="container">
+                    <div class="row">
+                        <div class="mobile-menu-wrap">
+                            <nav>
+                                <ul class="list-none">
+                                    <li class="{{ 'home'|current_menu_item }}">
+                                        <a href="{{ path('home') }}" class="animsition-link">Home</a>
+                                    </li>
+                                    <li class="{{ 'nuestro_metodo'|current_menu_item }}">
+                                        <a href="{{ path('nuestro_metodo') }}" class="animsition-link">Nuestro método</a>
+                                    </li>
+                                    <li class="{{ 'lo_que_hacemos'|current_menu_item }}">
+                                        <a href="{{ path('lo_que_hacemos') }}" class="animsition-link">Lo que hacemos</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- End mobile-menu-wrap -->
+                    </div>
+                </div>
+                <!-- End container -->
+            </div>
+
+            <!-- ************************ -->
+            <!--   PAGE TITLE             -->
+            <!-- ************************ -->
+            {% block page_title %}
+            {% endblock %}
+
+            <main>
+                {% block body %}
+                {% endblock %}
+            </main>
+
+            <!-- ************************ -->
+            <!--   FOOTER                 -->
+            <!-- ************************ -->
+
+            <footer>
+                {% block footer %}
+
+                <div class="container">
+
+                    <div class="footer-social mb30">
+                        <ul class="list-none">
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-facebook fa-fw"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-twitter fa-fw"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-linkedin fa-fw"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-behance fa-fw"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-pinterest fa-fw"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End footer-social -->
+                    <div class="footer-copy">
+                        <p>
+                            Copyright &copy; 2017. Design by
+                            <a href="#">Unvab</a>
+                            Coded by
+                            <a href="#">VLThemes</a>
+                        </p>
+                    </div>
+                    <!-- End footer-copy -->
+                </div>
+                <!-- End container -->
+                {% endblock %}
+            </footer>
+
+        </div>
+        <!-- End animsition -->
+        {% block javascripts %}
+            <script src="{{ asset('vendors/jquery-1.12.0.min.js') }}"></script>
+            <script src="{{ asset('scripts/plugins.min.js') }}"></script>
+            <script src="{{ asset('scripts/scripts.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

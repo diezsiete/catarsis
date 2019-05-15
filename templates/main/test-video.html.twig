@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{ asset('css/plugins.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/MyFontsWebfontsKit.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/test-video.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+</head>
+
+<body>
+<!-- animsition -->
+<div class="">
+
+    <!-- ************************ -->
+    <!--  GO TO TOP               -->
+    <!-- ************************ -->
+
+    <a href="#top" class="toTop">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- ************************ -->
+    <!--   PAGE BORDER            -->
+    <!-- ************************ -->
+
+    <span class="frame-line animated top-frame"></span>
+    <span class="frame-line animated right-frame"></span>
+    <span class="frame-line animated bottom-frame"></span>
+    <span class="frame-line animated left-frame"></span>
+
+    <!-- ************************ -->
+    <!--   NAVBAR                 -->
+    <!-- ************************ -->
+
+    <div class="crazy-navbar">
+        <div class="container">
+
+            <div class="crazy-logo">
+                <a href="{{ path('home') }}"><img src="{{ asset('img/logo-catarsis-black.png') }}" alt="crazy-logo"></a>
+            </div>
+            <!-- End crazy-logo -->
+            <nav class="crazy-nav">
+                <ul class="sf-menu">
+                    <li class="{{ 'home'|current_menu_item }}">
+                        <a href="{{ path('home') }}" class="animsition-link">Home</a>
+                    </li>
+                    <li class="{{ 'nuestro_metodo'|current_menu_item }}">
+                        <a href="{{ path('nuestro_metodo') }}" class="animsition-link">Nuestro método</a>
+                    </li>
+                    <li class="{{ 'lo_que_hacemos'|current_menu_item }}">
+                        <a href="{{ path('lo_que_hacemos') }}" class="animsition-link">Lo que hacemos</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="open-menu">
+                <i class="burger-icon">
+                    <i></i>
+                </i>
+            </a>
+        </div>
+        <!-- End container -->
+        <div class="container">
+            <div class="row">
+                <div class="mobile-menu-wrap">
+                    <nav>
+                        <ul class="list-none">
+                            <li class="{{ 'home'|current_menu_item }}">
+                                <a href="{{ path('home') }}" class="animsition-link">Home</a>
+                            </li>
+                            <li class="{{ 'nuestro_metodo'|current_menu_item }}">
+                                <a href="{{ path('nuestro_metodo') }}" class="animsition-link">Nuestro método</a>
+                            </li>
+                            <li class="{{ 'lo_que_hacemos'|current_menu_item }}">
+                                <a href="{{ path('lo_que_hacemos') }}" class="animsition-link">Lo que hacemos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- End mobile-menu-wrap -->
+            </div>
+        </div>
+        <!-- End container -->
+    </div>
+
+    <video poster="{{ asset('video/home-portada.png') }}" id="bgvid" playsinline autoplay muted loop>
+        <source src="{{ asset('video/home-portada2.mp4.mp4') }}" type="video/mp4">
+        {#        <source src="{{ asset('video/home-portada2.webmhd.webm') }}" type="video/webm"> #}
+
+    </video>
+
+    <video poster="{{ asset('video/home-portada.png') }}" id="bgvid" playsinline autoplay muted loop>
+        <source src="{{ asset('video/lo-que-hacemos.mp4.mp4') }}" type="video/mp4">
+        {#        <source src="{{ asset('video/home-portada2.webmhd.webm') }}" type="video/webm"> #}
+    </video>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block page_title %}
+    <div class="title-home">
+        <video poster="{{ asset('video/home-portada.png') }}" id="bgvid" playsinline autoplay muted loop>
+            <!--<source src="video/Home1920x1080.webmhd.webm" type="video/webm">-->
+            <source src="{{ asset('video/home-portada.mp4.mp4') }}" type="video/mp4">
+
+        </video>
+    </div>
+{% endblock %}

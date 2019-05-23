@@ -1,0 +1,145 @@
+.lo-que-hacemos{
+    background: #DEF2F2;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 160px;
+}
+.lo-que-hacemos .section-title{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 150px;
+}
+.lo-que-hacemos h2 {
+    transform: rotate(-6deg);
+    background-image: url(../img/lo-que-hacemos-titulo-back.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    margin-top: -150px;
+    padding-top: 150px;
+    margin-bottom: -150px;
+    padding-bottom: 150px;
+    margin-left: -120px;
+    padding-left: 120px;
+    z-index: 1;
+}
+.lo-que-hacemos .video-container{
+    position: relative;
+}
+.lo-que-hacemos .video-container img{
+    width: 130%;
+    position: absolute;
+    left: -15%;
+    top:-25%;
+    z-index: 1;
+}
+
+.lo-que-hacemos video.main {
+    width: 100%;
+    transition: 1s opacity;
+    z-index: 3;
+    position:relative;
+}
+
+.lo-que-hacemos .video-cont {
+    position: relative;
+}
+.lo-que-hacemos .video-cont video {
+    width: 100%    !important;
+    height: auto   !important;
+    display: block;
+}
+.lo-que-hacemos .video-cont .seccion {
+    position: absolute;
+    z-index: 3;
+    left: 20%;
+    right: 20%;
+    height:23%;
+    cursor: pointer;
+}
+.lo-que-hacemos .video-cont .nuestro-contenido {
+    /*border: 1px solid red;*/
+    top: 12%;
+}
+.lo-que-hacemos .video-cont .video {
+    /*border: 1px solid green;*/
+    top: 37%;
+    height:25%;
+}
+.lo-que-hacemos .video-cont .fotografia {
+    /*border: 1px solid blue;*/
+    top: 64%;
+}
+
+.lo-que-hacemos .video-cont a{
+    display: none;
+}
+.lo-que-hacemos .video-cont a.primero{
+    display: block;
+    height: 100%;
+}
+
+.lo-que-hacemos .decor-tl{
+    position: absolute;
+    width: 100%;
+    top: -30px;
+    left: -50px;
+    height: 365px;
+    background-image: url(../img/lo-que-hacemos-decor-tl.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.lo-que-hacemos .decor-tr{
+    position: absolute;
+    width: 100%;
+    top: 160px;
+    height: 159px;
+    background-image: url(../img/lo-que-hacemos-decor-tr.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-top: -159px;
+    padding-top: 350px;
+}
+
+
+/*----------------------*/
+/*   MAGNIFIC POPUP     */
+/*----------------------*/
+/** FLECHAS NAVEGACION **/
+.mfp-arrow-right .mfp-b, .mfp-arrow-right:before {
+    border-left: 27px solid #3F3F3F;
+}
+.mfp-arrow .mfp-b, .mfp-arrow:before {
+    border-top-width: 21px;
+    border-bottom-width: 21px;
+    opacity: .7;
+}
+.mfp-arrow .mfp-a, .mfp-arrow .mfp-b, .mfp-arrow:after, .mfp-arrow:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 35px;
+    margin-left: 35px;
+    border: inset transparent;
+}
+.mfp-arrow-right .mfp-a, .mfp-arrow-right:after {
+    border-left: 17px solid #FFF;
+    margin-left: 39px;
+}
+.mfp-arrow .mfp-a, .mfp-arrow:after {
+    border-top-width: 13px;
+    border-bottom-width: 13px;
+    top: 8px;
+}
+.mfp-arrow-left .mfp-b, .mfp-arrow-left:before {
+    margin-left: 25px;
+    border-right: 27px solid #3F3F3F;
+}
+.mfp-arrow-left .mfp-a, .mfp-arrow-left:after {
+    border-right: 17px solid #FFF;
+    margin-left: 31px;
+}

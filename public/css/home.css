@@ -1,4 +1,335 @@
-video{
+body{
+    background-color: #F8D5E5;
+}
+.frame-line {
+    background: #F8D5E5;;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                                        HOME VIDEO                                                  */
+/*--------------------------------------------------------------------------------------------------------------------*/
+video.home{
     width: 100%    !important;
     height: auto   !important;
+    display: block;
+    margin-bottom: 30px;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                                   POR QUE CATARSIS                                                 */
+/*--------------------------------------------------------------------------------------------------------------------*/
+.por-que {
+    background-image: url(../img/por-que-catarsis-back.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-bottom: 30px;
+    position: relative;
+}
+.info-block-wrap {
+    position: relative;
+}
+.info-block-wrap .info-block {
+    padding: 30px 80px;
+}
+.info-block-wrap .info-block h2 {
+    transform: rotate(-6deg);
+    background-color: transparent;
+    background-image: url(../img/por-que-back-title.png);
+    background-position: -417px -400px;
+    background-repeat: no-repeat;
+    margin-top: -400px;
+    padding-top: 400px;
+    margin-bottom: -250px;
+    padding-bottom: 250px;
+    margin-left: -250px;
+    padding-left: 250px;
+    position:relative;
+    z-index:2;
+}
+
+.info-block-wrap .info-block .text-content {
+    background-image: url(../img/por-que-back-content.png);
+    background-position: 135px 117px;
+    background-repeat: no-repeat;
+    margin-top: -430px;
+    padding-top: 200px;
+    margin-right: -100px;
+    padding-right: 100px;
+    margin-left: -300px;
+    padding-left: 300px;
+    position: relative;
+}
+
+.info-block-wrap .info-block .text-content p{
+    position:relative;
+    z-index: 2;
+}
+
+@media (max-width: 992px) {
+    .info-block-wrap .info-block {
+        margin-top: 0;
+    }
+}
+@media (max-width: 768px) {
+    .love-block h2 {
+        font-size: 24px;
+    }
+    .love-block h2 i {
+        font-size: 36px;
+    }
+}
+@media (max-width: 480px) {
+    .info-block-wrap .image-block {
+        height: 400px;
+    }
+    .info-block-wrap .info-block {
+        padding: 40px;
+    }
+}
+
+.por-que .decor-tr{
+    position: absolute;
+    width: 100%;
+    top:0;
+    height: 159px;
+    background-image: url(../img/por-que-decor-tr.png);
+    background-repeat: no-repeat;
+    background-position: 110% top;
+    margin-top: -159px;
+    padding-top: 350px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                            QUIENES HAN HECHO CATARSIS                                              */
+/*--------------------------------------------------------------------------------------------------------------------*/
+.quienes {
+    background: white;
+    position:relative;
+    z-index:3;
+    margin-bottom: 30px;
+}
+.quienes .section-title{
+    margin-bottom: 0;
+}
+.quienes .container{
+    width: 100% !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+.quienes h2{
+    width:100%;
+    background-image: url(../img/quienes-title-back.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 164px;
+    margin-bottom: -67px;
+    margin-top: -126px;
+    padding-top: 74px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                                       ALIADOS                                                      */
+/*--------------------------------------------------------------------------------------------------------------------*/
+.aliados {
+    background: #C4D7AA;
+    position: relative;
+}
+.aliados .container{
+    width: 100% !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+.aliados h2 {
+    background-image: url(../img/aliados-title-back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    margin-top: -120px;
+}
+
+.aliados .owl-item.angela-villota{
+    margin-top: 30px;
+}
+
+.aliados .decor-tl{
+    position: absolute;
+    width: 100%;
+    top: -20px;
+    left: 0;
+    height: 365px;
+    background-image: url(../img/aliados-decor-tl.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.aliados .decor-tr{
+    position: absolute;
+    width: 100%;
+    top: -30px;
+    height: 154px;
+    background-image: url(../img/aliados-decor-tr.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+/*----------------------*/
+/*   SLIDER             */
+/*----------------------*/
+.quienes-wrap, .aliados-wrap {
+    position: relative;
+    text-align: center;
+}
+.quienes-wrap .owl-item, .aliados-wrap .owl-item {
+    width: 100%;
+}
+
+
+.quienes-wrap .avatar-wrap, .aliados-wrap .avatar-wrap {
+    display: inline-block;
+}
+
+.quienes-nav i, .aliados-nav i {
+    padding: 0 4px;
+    font-size: 50px;
+    line-height: 30px;
+    color: #FBB040;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    margin-top: -11px;
+    z-index: 10;
+    transition: color 0.3s ease-in-out;
+}
+.aliados-nav i {
+    top: 50%;
+}
+
+.lnr-arrow-left:before {
+    content: "\e875";
+}
+
+.lnr-arrow-right:before {
+    content: "\e876";
+}
+.lnr {
+    font-weight: bolder;
+}
+
+.quienes-nav i:hover {
+    color: #C4D7AA;
+}
+.quienes-nav i.lnr-arrow-left, .aliados-nav i.lnr-arrow-left {
+    left: 30px;
+}
+.quienes-nav i.lnr-arrow-right, .aliados-nav i.lnr-arrow-right {
+    right: 30px;
+}
+@media (max-width: 768px) {
+    .quienes-wrap .avatar-wrap img, .aliados-wrap .avatar-wrap img {
+        /*height: 100px;*/
+        width: 100px;
+    }
+}
+@media (max-width: 480px) {
+    .quienes-nav, .aliados-nav {
+        display: none;
+    }
+    .quienes-wrap .avatar-wrap img, .aliados-wrap .avatar-wrap img {
+        /*height: 80px;*/
+        width: 80px;
+    }
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #C4D7AA !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: #FBB040 !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.owl-aliados-slider.owl-theme .owl-dots .owl-dot.active span, .owl-aliados-slider.owl-theme .owl-dots .owl-dot:hover span {
+    background: #D6EEF0 !important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                                    CONTACTO                                                        */
+/*--------------------------------------------------------------------------------------------------------------------*/
+.contact-form{
+    padding-top: 80px;
+    position: relative;
+}
+.contact-form .container.title{
+    background-image: url(../img/contacto-title-back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index:2;
+    position:relative;
+}
+
+.contact-form .container.form{
+    background-image: url(../img/contacto-back.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: -150px;
+    padding-top: 150px;
+}
+
+.contact-form input, .contact-form textarea{
+    border-color: #1C1551;
+}
+.contact-form input, .contact-form textarea,
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #1C1551;
+    padding-left: 0;
+}
+.contact-form input{
+    margin-bottom: 30px;
+}
+.contact-form .btn-col{
+    margin-top: 50px;
+}
+
+.return-msg {
+    color: #fe3237;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.contact-form .decor-tr{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    right: 50px;
+    height: 146px;
+    background-image: url(../img/contacto-decor-tr.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.contact-form .decor-bl{
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    left: 40px;
+    height: 151px;
+    background-image: url(../img/contacto-decor-bl.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index:2;
+}
+
+.contact-form .decor-br{
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    right: 40px;
+    height: 150px;
+    background-image: url(../img/contacto-decor-br.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index:2;
 }

@@ -10,9 +10,50 @@ body{
     line-height: 1.8;
     font-size: 16px;
     letter-spacing: 0.5px;
-    color: #393939;
+    color: #1C1551;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    line-height: .7em;
+    font-family: 'Authenia-Textured', selimaregular, serif;
+    margin: 15px 0;
+    color: #1C1551;
+    text-transform: none;
+    letter-spacing: 0;
+}
+h2 {
+    font-size: 130px;
+}
+input,
+textarea {
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    padding: 13px 15px;
+    color: #fff;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+ul.list-none,
+ol.list-none {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 /*----------------------*/
 /*   GO TO TOP          */
 /*----------------------*/
@@ -111,6 +152,94 @@ body{
     }
 }
 
+/*----------------------*/
+/*   BTN                */
+/*----------------------*/
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1C1551;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 70px;
+    position: relative;
+    outline: none;
+    background-color: transparent;
+    border: 3px solid #1C1551;
+}
+.btn span {
+    position: relative;
+    z-index: 2;
+}
+.btn::after {
+    content: '';
+    background-color: #1C1551;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.btn:hover::after {
+    height: 100%;
+}
+.btn-white {
+    color: #fff;
+}
+.btn-white:hover {
+    color: #fff;
+}
+.btn:focus {
+    outline: none;
+}
+.btn.disable {
+    cursor: default;
+}
+.btn.line-vert::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: -85%;
+    left: 50%;
+    z-index: 22;
+    background-color: #0de7cb;
+    transition: all 0.2s ease-in-out;
+}
+.btn.line-vert:hover::before {
+    top: 85%;
+}
+.btn.line-hor::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    top: 50%;
+    left: 100%;
+    z-index: 22;
+    margin-left: -10px;
+    background-color: #0de7cb;
+    transition: all 0.2s ease-in-out;
+}
+.btn.line-hor:hover::before {
+    left: -70px;
+    margin-left: 0;
+}
+@media (max-width: 480px) {
+    .btn {
+        padding: 12px 40px;
+    }
+}
+
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*                                                              MENU                                                  */
@@ -120,7 +249,7 @@ body{
     /*top: -30px;*/
     left: 0;
     right: 0;
-    /*z-index: 889;*/
+    z-index: 889;
     background-color: #F8D5E5;
 }
 @media (min-width: 1200px) {
@@ -340,3 +469,89 @@ body{
         display: none !important;
     }
 }
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                                    FOOTER                                                          */
+/*--------------------------------------------------------------------------------------------------------------------*/
+footer {
+    position: relative;
+}
+
+.footer-inner {
+    padding: 90px 0;
+    margin-top: 20px;
+    position: relative !important;
+    background-color: #ffffff;
+}
+footer .catarsis-logo{
+    width:100%;
+}
+.footer-social p{
+    margin-top: 0;
+}
+.footer-social ul {
+    display: inline-block;
+}
+.footer-social ul li {
+    float: left;
+    margin: 0 8px;
+}
+.footer-social ul li.first{
+    margin-left: 0;
+}
+.footer-social ul li a {
+    display: block;
+    font-size: 22px;
+    color: #1C1551;
+}
+.footer-social a:hover {
+    color: #7BCDDB;
+    text-decoration: none;
+}
+.footer-social a:hover i {
+    animation: animateIconTop 0.3s forwards;
+}
+
+.footer-copy p{
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                                    ATOMIC CLASSES                                                  */
+/*--------------------------------------------------------------------------------------------------------------------*/
+.text-center {
+    text-align: center;
+}
+.mt40 {
+    margin-top: 40px;
+    display: block;
+}
+.mb40{
+    margin-bottom: 40px;
+    display: block;
+}
+.pt60 {
+    padding-top: 60px;
+    display: block;
+}
+.pb60 {
+    padding-bottom: 60px;
+    display: block;
+}
+.pt150 {
+    padding-top: 150px;
+    display: block;
+}
+.pb150 {
+    padding-bottom: 150px;
+    display: block;
+}
+@media (max-width: 768px) {
+    .sm-mb30 {
+        margin-bottom: 30px;
+        display: block;
+    }
+}
+

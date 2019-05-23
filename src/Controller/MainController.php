@@ -4,7 +4,10 @@
 namespace App\Controller;
 
 
+use Swift_Mailer;
+use Swift_Message;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 class MainController extends AbstractController
@@ -32,6 +35,26 @@ class MainController extends AbstractController
     public function loQueHacemos()
     {
         return $this->render('main/lo-que-hacemos.html.twig');
+    }
+
+    /**
+     * @Route("/contacto-post", name="contacto_post")
+     */
+    public function contactoPost(Swift_Mailer $mailer, Request $request)
+    {
+        $name = $request->request->get('name');
+        $email = $request->request->get('email');
+        $message = $request->request->get('message');
+
+        $message = (new Swift_Message('Hello Email'))
+            ->setSubject("Mensaje de $name [$email]")
+            ->setFrom('paginaweb@catarsis.com.co')
+            ->setTo('contactanos@catarsis.com.co')
+            ->setBody($message, 'text/html');
+        $mailer->send($message);
+
+        return $this->json(["Mensaje enviado exitosamente"]);
+
     }
 
     /**

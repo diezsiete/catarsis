@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    background-color: #F8D5E5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
@@ -11,6 +11,20 @@ body{
     font-size: 16px;
     letter-spacing: 0.5px;
     color: #1C1551;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out, background-color 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+a:hover {
+    color: #0de7cb;
+    text-decoration: underline;
 }
 h1,
 h2,
@@ -26,9 +40,18 @@ h6 {
     text-transform: none;
     letter-spacing: 0;
 }
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
 h2 {
     font-size: 130px;
 }
+h6 {
+    font-size: 16px;
+}
+
 input,
 textarea {
     border: none;
@@ -44,6 +67,11 @@ textarea {
     padding: 13px 15px;
     color: #fff;
 }
+p {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
 .section-title {
     text-align: center;
     margin-bottom: 100px;
@@ -105,7 +133,7 @@ ol.list-none {
     left: 0;
     right: 0;
     display: block;
-    background: #0de7cb;
+    background: #F8D5E5;
     z-index: 888;
 }
 .frame-line.top-frame {
@@ -252,11 +280,7 @@ ol.list-none {
     z-index: 889;
     background-color: #F8D5E5;
 }
-@media (min-width: 1200px) {
-    .crazy-navbar {
-        position: absolute;
-    }
-}
+
 .crazy-navbar .container {
     position: relative;
 }
@@ -479,7 +503,7 @@ footer {
 
 .footer-inner {
     padding: 90px 0;
-    margin-top: 20px;
+    margin-top: 30px;
     position: relative !important;
     background-color: #ffffff;
 }

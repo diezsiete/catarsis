@@ -1,0 +1,172 @@
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                                   NUESTRO METODO                                                   */
+/*--------------------------------------------------------------------------------------------------------------------*/
+.nuestro-metodo {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: #D6EEF0;
+    margin-bottom:30px;
+}
+
+.nuestro-metodo .section-title{
+    background-image: url(../img/nuestro-metodo/nuestro-metodo-title-back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: -30px;
+    padding-top: 30px;
+    margin-bottom: -30px;
+    padding-bottom: 30px;
+}
+
+.nuestro-metodo .sections-container{
+    background-image: url(../img/nuestro-metodo/nuestro-metodo-back2.png);
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.nuestro-metodo section{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.nuestro-metodo .container{
+    position:relative;
+}
+.nuestro-metodo .decor{
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.nuestro-metodo .decor1{
+    top:0;
+    height: 317px;
+    background-image: url(../img/nuestro-metodo/decor1.png);
+    background-position: left bottom;
+}
+.nuestro-metodo .decor2{
+    bottom:100px;
+    right: 200px;
+    height: 55px;
+    background-image: url(../img/nuestro-metodo/decor2.png);
+    background-position: right bottom;
+}
+.nuestro-metodo .decor3{
+    top:0;
+    right: 200px;
+    height: 196px;
+    background-image: url(../img/nuestro-metodo/decor3.png);
+    background-position: right center;
+}
+
+.nuestro-metodo .decor4{
+    top:-200px;
+    height: 180px;
+    background-image: url(../img/nuestro-metodo/decor4.png);
+    background-position: left top;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                                     EQUIPO                                                         */
+/*--------------------------------------------------------------------------------------------------------------------*/
+section.equipo {
+    background: #FDF5D5;
+}
+.equipo .container.title {
+    z-index: 2;
+    position: relative;
+}
+section.equipo h2 {
+    background-image: url(../img/equipo-title-back.png);
+    background-position: 300px center;
+    background-repeat: no-repeat;
+    margin-top: -200px;
+    padding-top: 264px;
+    margin-bottom: -250px;
+    padding-bottom: 250px;
+    margin-left: -250px;
+    padding-left: 250px;
+    position:relative;
+    z-index:2;
+    transform: rotate(0deg);
+}
+
+section.equipo .section-title p{
+    position: relative;
+    z-index:3;
+}
+
+.equipo .container.video{
+    margin-top: -100px;
+    z-index:1;
+    position: relative;
+}
+.equipo video{
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+.equipo .container.emails{
+    margin-top: -50px;
+    z-index:2;
+    position: relative;
+}
+
+.equipo-item {
+    text-align: center;
+}
+.equipo-item h6 {
+    font-weight: bold;
+    margin: 0;
+    color: #A081A3;
+}
+.equipo-item p {
+    margin-bottom: 0;
+}
+.equipo-item a{
+    font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*                                                   GIRL PWR                                                         */
+/*--------------------------------------------------------------------------------------------------------------------*/
+.girl-pwr{
+    margin-top:30px;
+    padding-top: 150px;
+    padding-bottom: 250px;
+    background: #D6EEF0;
+}
+
+section.girl-pwr {
+    text-align: center;
+}
+section.girl-pwr h1{
+    font-size: 280px;
+    background-image: url(../img/girl-pwr-title-back.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    padding-top: 100px;
+    margin-bottom: -50px;
+    padding-bottom: 50px;
+    position:relative;
+    z-index: 2;
+}
+
+section.girl-pwr p{
+    font-size: 1.5em;
+    background-image: url(../img/girl-pwr-text-back.png);
+    background-position: 40px 50px;
+    background-repeat: no-repeat;
+    position:relative;
+    margin-top: -800px;
+    padding-top: 800px;
+    margin-bottom: -200px;
+    padding-bottom: 200px;
+    margin-left: -300px;
+    padding-left: 300px;
+    margin-right: -350px;
+    padding-right: 350px;
+    z-index: 1;
+}

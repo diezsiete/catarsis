@@ -1,2 +1,208 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/nuestro-metodo.css') }}">
+{% endblock %}
+
+
+{% block body %}
+
+<section class="nuestro-metodo">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-sr>Nuestro método</h2>
+        </div>
+    </div>
+
+    <div class="sections-container">
+        <section>
+            <div class="container">
+                <div class="decor decor1"></div>
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <div>
+                            <img src="{{ asset('img/nuestro-metodo/metodo-heart.png') }}" alt="corazon">
+                        </div>
+                        <p data-sr="wait .2s">
+                            El ingrediente principal de nuestro método es la relación cercana <br>
+                            con nuestros clientes
+                        </p>
+                        <img src="{{ asset('img/nuestro-metodo/metodo-flecha.png') }}" alt="corazon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-sr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <div>
+                            <img src="{{ asset('img/nuestro-metodo/metodo-brain.png') }}" alt="corazon">
+                        </div>
+                        <p data-sr="wait .2s">
+                            Entendemos tus ideas, partiendo de tu objetivo comercial y/o Modelo de Negocio.
+                        </p>
+                        <img src="{{ asset('img/nuestro-metodo/metodo-mas.png') }}" alt="corazon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-sr>
+            <div class="container">
+                <div class="decor decor2"></div>
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <div>
+                            <img src="{{ asset('img/nuestro-metodo/metodo-chess.png') }}" alt="corazon">
+                        </div>
+                        <p data-sr="wait .2s">
+                            Hacemos Catarsis con tus ideas evolucionándolas a través de un planteamiento estratégico y creativo,
+                            siempre teniendo en cuenta tu objetivo comercial.
+                        </p>
+                        <img src="{{ asset('img/nuestro-metodo/metodo-mas.png') }}" alt="corazon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-sr>
+            <div class="container">
+                <div class="decor decor3"></div>
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <div>
+                            <img src="{{ asset('img/nuestro-metodo/metodo-catarsis.png') }}" alt="corazon">
+                        </div>
+                        <p data-sr="wait .2s">
+                            Ideación y producción de contenidos audiovisuales, gráficos o escritos, con un objetivo claro de
+                            comunicación.
+                        </p>
+                        <img src="{{ asset('img/nuestro-metodo/metodo-mas.png') }}" alt="corazon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-sr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <div>
+                            <img src="{{ asset('img/nuestro-metodo/metodo-youtube.png') }}" alt="corazon">
+                        </div>
+                        <p data-sr="wait .2s">
+                            Damos vida a todo el proceso de creación, post produciendo con gran diseño audiovisual piezas
+                            cuidadosamente editadas y finalizadas.
+                        </p>
+                        <img src="{{ asset('img/nuestro-metodo/metodo-flecha.png') }}" alt="corazon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-sr>
+            <div class="container">
+                <div class="decor decor4"></div>
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <div>
+                            <img src="{{ asset('img/nuestro-metodo/metodo-people.png') }}" alt="corazon">
+                        </div>
+                        <p data-sr="wait .2s">
+                            A lo largo del proceso y en la medida que sea necesario, contamos con aliados
+                            que nos apoyan en las diferentes áreas de la comunicación y la publicidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+    <!-- ************************ -->
+    <!--   EQUIPO                 -->
+    <!-- ************************ -->
+
+    <section class="pt60 pb150 equipo">
+        <div class="container title">
+            <div class="section-title">
+                <h2>El equipo detrás <br> de las ideas</h2>
+                <p>Somos una empresa creada y liderada por mujeres, quiénes entienden su rol en la sociedad. <br>
+                    La comunicación es nuestra herramienta, como agentes de cambio, innovación y creatividad.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="container video">
+            <video poster="{{ asset('video/home-portada.png') }}" id="equipo-video" playsinline autoplay muted loop>
+                <source src="{{ asset('video/equipo.webmhd.webm') }}" type="video/webm">
+            </video>
+        </div>
+
+        <div class="container emails">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-md-offset-3">
+
+                    <div class="equipo-item sm-mb40 mb40">
+                        <h6>
+                            Carolina Aragón
+                        </h6>
+                        <p>
+                            La directora que escucha tus ideas
+                        </p>
+                        <p>
+                            <a href="mailto:cguerrero@catarsis.com.co">
+                                cguerrero@catarsis.com.co
+                            </a>
+                        </p>
+                    </div>
+                    <!-- End process-item -->
+                </div>
+                <div class="col-sm-12 col-md-6 col-md-offset-3">
+
+                    <div class="equipo-item sm-mb40">
+                        <h6>
+                            Diana Ancines
+                        </h6>
+                        <p>
+                            La directora que hace realidad tus ideas
+                        </p>
+                        <p>
+                            <a href="mailto:dancines@catarsis.com.co">
+                                dancines@catarsis.com.co
+                            </a>
+                        </p>
+                    </div>
+                    <!-- End process-item -->
+                </div>
+            </div>
+        </div>
+        <!-- End container -->
+
+
+    </section>
+
+    <!-- ************************ -->
+    <!-- GIRL PWR                 -->
+    <!-- ************************ -->
+
+    <section class="girl-pwr">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="uppercase">¡GIRL<br>PWR!</h1>
+                </div>
+                <div class="col-md-6 col-md-offset-3">
+                    <p>
+                        Empoderamos mujeres<br>
+                        -trabajamos juntas-<br>
+                        exaltamos nuestras capacidades y<br>
+                        evidenciamos nuestro talento en <br>
+                        un mundo que aun no cree en<br>
+                        nuestro poder
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

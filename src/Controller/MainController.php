@@ -30,11 +30,11 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/lo-que-hacemos", name="lo_que_hacemos")
+     * @Route("/soy-lo-que-mas-me-gusta", name="slqmmg")
      */
-    public function loQueHacemos()
+    public function slqmmg()
     {
-        return $this->render('main/lo-que-hacemos.html.twig');
+        return $this->render('main/slqmmg.html.twig');
     }
 
     /**

@@ -1,0 +1,75 @@
+.slqmmg {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: #FDF5D5;
+    text-align: center;
+}
+
+.slqmmg .section-title{
+    background-image: url(../img/slqmmg-title-back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+    padding-top: 80px;
+    margin-bottom: -80px;
+    padding-bottom: 80px;
+}
+
+.slqmmg .info{
+    margin-top: 50px;
+}
+
+.slqmmg .image-container{
+    margin-bottom: 40px;
+}
+.slqmmg .image-container img{
+    width:100%;
+}
+
+.slqmmg h4{
+    font-size: 28px;
+}
+.slqmmg .bwf-logo-container{
+    width: 100%;
+    text-align: center;
+    margin-top: -100px;
+}
+
+.slqmmg .text-container{
+    background-image: url(../img/slqmmg-text-back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+    padding-top: 60px;
+    margin-bottom: -80px;
+    padding-bottom: 80px;
+    float: left;
+}
+/*----------------------*/
+/*   CAPITULOS          */
+/*----------------------*/
+.slqmmg.capitulos{
+    text-align: left;
+    padding-top: 0;
+}
+.capitulo-item {
+    margin-bottom: 30px;
+}
+.capitulo-item .thumb {
+    position: relative;
+    padding:0;
+    margin:0;
+}
+
+.capitulo-item img{
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+}
+.capitulo-item h6 {
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+.capitulo-item h6 a:hover {
+    text-decoration: none;
+}

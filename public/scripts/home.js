@@ -26,6 +26,11 @@ jQuery.noConflict()(function ($) {
     $(document).ready(function() {
         owl_carousel('quienes', 2);
         owl_carousel('aliados', 3);
+
+        $('#contact-form').on('submit', function(e) {
+            return form_to_ajax_request($, $(this), ['email', 'name', 'message'], ['email', 'name', 'message']);
+        });
+
     });
 
 
@@ -59,4 +64,5 @@ jQuery.noConflict()(function ($) {
         owl_carousel('quienes', 2);
         owl_carousel('aliados', 3);
     });
+
 });

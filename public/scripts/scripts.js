@@ -1,3 +1,106 @@
+function isSet(variable) {
+	return !(variable === '' || typeof (variable) == 'undefined');
+}
+
+function clearForm(form_el) {
+	form_el.find('input[type=text]').val('');
+	form_el.find('input[type=checkbox]').prop('checked', false);
+	form_el.find('textarea').val('');
+}
+
+function clearValidation(form_el) {
+	form_el.find('.form-control').removeClass('has-error');
+	form_el.find('.return-msg-input').removeClass('show-return-msg').html("");
+	form_el.find('.return-msg').removeClass('show-return-msg').html("");
+}
+
+function showLoader(form_el) {
+	form_el.find('.ajax-loader').fadeIn('fast');
+}
+
+function hideLoader(form_el) {
+	form_el.find('.ajax-loader').fadeOut('fast');
+}
+
+function setReturnMessage(form_el, content) {
+	if (!isSet(content))
+		content = 'Unspecified message.';
+	form_el.find('.return-msg').html(content);
+}
+
+function showReturnMessage(form_el) {
+	form_el.find('.return-msg').addClass('show-return-msg');
+}
+
+function showReturnMessageInput(form_control_el, content) {
+	form_control_el.addClass('has-error');
+	form_control_el.find('.return-msg-input').addClass('show-return-msg').html(content);
+}
+
+function form_to_ajax_request($, form_el, all_fields, required_fields) {
+	var fields_values = [];
+	var error = false;
+
+	clearValidation(form_el);
+
+	//get values from fields
+	$.each(all_fields, function(index, value) {
+		fields_values[value] = form_el.find('*[name=' + value + ']').val();
+	});
+
+	//check if required fields are set
+	$.each(required_fields, function(index, value) {
+		if (!isSet(fields_values[value])) {
+			var messageGlobal = form_el.data('all-fields-required-msg');
+			var messageInput = form_el.data(value + '-not-set-msg');
+			if (isSet(messageInput)){
+				showReturnMessageInput(form_el.find('*[name=' + value + ']').parent('.form-control'), messageInput);
+			}
+			setReturnMessage(form_el, messageGlobal);
+			showReturnMessage(form_el);
+			error = true;
+			return;
+		}
+	});
+	if (error)
+		return false;
+
+	//form data query object for ajax request
+	var data_query = {};
+	$.each(all_fields, function(index, value) {
+		data_query[value] = fields_values[value];
+	});
+	data_query['ajax'] = true;
+
+	//show ajax loader
+	showLoader(form_el);
+
+	//send the request
+	$.ajax({
+		type: form_el.attr('method'),
+		url: form_el.attr('action'),
+		data: data_query,
+		cache: false,
+		dataType: 'text'
+	}).fail(function() { //request failed
+		setReturnMessage(form_el, form_el.data('ajax-fail-msg'));
+		showReturnMessage(form_el);
+		hideLoader(form_el);
+	}).done(function(message) { //request succeeded
+		if (true) {
+			clearForm(form_el);
+			setReturnMessage(form_el, form_el.data('success-msg'));
+			showReturnMessage(form_el);
+		} else {
+			setReturnMessage(form_el, message);
+			showReturnMessage(form_el);
+		}
+		hideLoader(form_el);
+	});
+
+	return false;
+}
+
 jQuery.noConflict()(function ($) {
 
 	'use strict';
@@ -210,101 +313,6 @@ jQuery.noConflict()(function ($) {
 		});
 
 
-		$('#contact-form').on('submit', function(e) {
-		   return form_to_ajax_request($(this), ['email', 'name', 'message'], ['email', 'name', 'message']);
-	   });
-
-
-		function form_to_ajax_request(form_el, all_fields, required_fields) {
-			var fields_values = [];
-			var error = false;
-
-			//get values from fields
-			$.each(all_fields, function(index, value) {
-				fields_values[value] = form_el.find('*[name=' + value + ']').val();
-			});
-
-			//check if required fields are set
-			$.each(required_fields, function(index, value) {
-				if (!isSet(fields_values[value])) {
-					var message = form_el.data(value + '-not-set-msg');
-					if (!isSet(message))
-						message = form_el.data('all-fields-required-msg');
-					setReturnMessage(form_el, message);
-					showReturnMessage(form_el);
-					error = true;
-					return;
-				}
-			});
-			if (error)
-				return false;
-
-			//form data query object for ajax request
-			var data_query = {};
-			$.each(all_fields, function(index, value) {
-				data_query[value] = fields_values[value];
-			});
-			data_query['ajax'] = true;
-
-			//show ajax loader
-			showLoader(form_el);
-
-			//send the request
-			$.ajax({
-				type: form_el.attr('method'),
-				url: form_el.attr('action'),
-				data: data_query,
-				cache: false,
-				dataType: 'text'
-			}).fail(function() { //request failed
-				setReturnMessage(form_el, form_el.data('ajax-fail-msg'));
-				showReturnMessage(form_el);
-			}).done(function(message) { //request succeeded
-				if (true) {
-					clearForm(form_el);
-					setReturnMessage(form_el, form_el.data('success-msg'));
-					showReturnMessage(form_el);
-				} else {
-					setReturnMessage(form_el, message);
-					showReturnMessage(form_el);
-				}
-			});
-
-			//hide ajax loader
-			hideLoader(form_el);
-
-			return false;
-		}
-
-		function isSet(variable) {
-			if (variable == '' || typeof(variable) == 'undefined')
-				return false;
-			return true;
-		}
-
-		function clearForm(form_el) {
-			form_el.find('input[type=text]').val('');
-			form_el.find('input[type=checkbox]').prop('checked', false);
-			form_el.find('textarea').val('');
-		}
-
-		function showLoader(form_el) {
-			form_el.find('.ajax-loader').fadeIn('fast');
-		}
-
-		function hideLoader(form_el) {
-			form_el.find('.ajax-loader').fadeOut('fast');
-		}
-
-		function setReturnMessage(form_el, content) {
-			if (!isSet(content))
-				content = 'Unspecified message.';
-			form_el.find('.return-msg').html(content);
-		}
-
-		function showReturnMessage(form_el) {
-			form_el.find('.return-msg').addClass('show-return-msg');
-		}
 
 		$('.return-msg').on('click', function(e) {
 			$(this).removeClass('show-return-msg').html('&nbsp;');

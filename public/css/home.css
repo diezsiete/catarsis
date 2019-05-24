@@ -420,27 +420,8 @@ video.home{
     padding-top: 150px;
 }
 
-.contact-form input, .contact-form textarea{
-    border-color: #1C1551;
-}
-.contact-form input, .contact-form textarea,
-.contact-form input::placeholder, .contact-form textarea::placeholder {
-    color: #1C1551;
-    padding-left: 0;
-}
-.contact-form input{
-    margin-bottom: 30px;
-}
 .contact-form .btn-col{
     margin-top: 50px;
-}
-
-.return-msg {
-    color: #fe3237;
-    margin-top: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 13px;
 }
 
 .contact-form .decor-tr{

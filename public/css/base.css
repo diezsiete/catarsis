@@ -23,7 +23,7 @@ a:focus {
     outline: none;
 }
 a:hover {
-    color: #0de7cb;
+    color: #7BCDDB;
     text-decoration: underline;
 }
 h1,
@@ -55,7 +55,7 @@ h6 {
 input,
 textarea {
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #1C1551;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -64,9 +64,19 @@ textarea {
     width: 100%;
     max-width: 100%;
     background-color: transparent;
-    padding: 13px 15px;
-    color: #fff;
+    padding: 13px 0;
+    color: #1C1551;
+    margin-bottom: 30px;
 }
+input::placeholder, textarea::placeholder {
+    color: #1C1551;
+    padding-left: 0;
+}
+.has-error input, .has-error textarea{
+    border-bottom: 2px solid #fe3237;
+    margin-bottom: 10px;
+}
+
 p {
     margin: 0 0 20px 0;
     padding: 0;
@@ -82,6 +92,16 @@ ol.list-none {
     padding: 0;
     margin: 0;
 }
+.return-msg, .return-msg-input {
+    color: #fe3237;
+    margin-top:10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.return-msg-input {
+    margin-top:0;
+}
 /*----------------------*/
 /*   GO TO TOP          */
 /*----------------------*/
@@ -92,7 +112,7 @@ ol.list-none {
     bottom: 30px;
     right: 30px;
     font-size: 24px;
-    background-color: #009985;
+    background-color: #7BCDDB;
     color: #fff !important;
     overflow: hidden;
     text-align: center;
@@ -273,6 +293,7 @@ ol.list-none {
 /*                                                              MENU                                                  */
 /*--------------------------------------------------------------------------------------------------------------------*/
 .crazy-navbar {
+    position:relative;
     /*position: absolute;*/
     /*top: -30px;*/
     left: 0;

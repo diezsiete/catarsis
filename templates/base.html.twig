@@ -56,8 +56,13 @@
                             <li class="{{ 'nuestro_metodo'|current_menu_item }}">
                                 <a href="{{ path('nuestro_metodo') }}" class="animsition-link">Nuestro método</a>
                             </li>
-                            <li class="{{ 'lo_que_hacemos'|current_menu_item }}">
+                            <li class="{{ 'slqmmg'|current_menu_item }}">
                                 <a href="{{ path('slqmmg') }}" class="animsition-link">SLQMMG</a>
+                            </li>
+                            <li class="{{ 'hablemos_de_tu_proyecto'|current_menu_item }}">
+                                <a href="{{ path('hablemos_de_tu_proyecto') }}" class="animsition-link">
+                                    Hablemos de tu proyecto
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -81,6 +86,11 @@
                                     </li>
                                     <li class="{{ 'lo_que_hacemos'|current_menu_item }}">
                                         <a href="{{ path('slqmmg') }}" class="animsition-link">SLQMMG</a>
+                                    </li>
+                                    <li class="{{ 'hablemos_de_tu_proyecto'|current_menu_item }}">
+                                        <a href="{{ path('hablemos_de_tu_proyecto') }}" class="animsition-link">
+                                            Hablemos de tu proyecto
+                                        </a>
                                     </li>
                                 </ul>
                             </nav>
@@ -112,10 +122,26 @@
                         </div>
                         <div class="col-sm-3">
                             <ul class="list-none">
-                                <li>HOME</li>
-                                <li>NUESTRO MÉTODO</li>
-                                <li>LO QUE HACEMOS</li>
-                                <li>HABLEMOS DE TU PROYECTO</li>
+                                <li>
+                                    <a href="{{ path('home') }}">
+                                        HOME
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('nuestro_metodo') }}">
+                                        NUESTRO MÉTODO
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('slqmmg') }}">
+                                        SLQMMG
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('hablemos_de_tu_proyecto') }}">
+                                        HABLEMOS DE TU PROYECTO
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-sm-3 footer-social">

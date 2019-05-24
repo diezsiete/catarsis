@@ -1,0 +1,62 @@
+<h3>Brief pagina web catarsis</h3>
+
+<p>
+    <b>Nombre</b> {{ nombre }}
+</p>
+<p>
+    <b>Email</b> {{ email }}
+</p>
+
+<h4>
+    ¿Qué producto necesitas?
+</h4>
+{% if video %}
+    <h5>Video</h5>
+    <p>{{ video }}</p>
+{% endif %}
+
+{% if fotografia %}
+    <h5>Fotografía</h5>
+    <p>{{ fotografia }}</p>
+{% endif %}
+
+{% if estrategia %}
+    <h5>Estrategia</h5>
+    <p>{{ estrategia }}</p>
+{% endif %}
+
+{% if grafica %}
+    <h5>Gráfica</h5>
+    <p>{{ grafica }}</p>
+{% endif %}
+
+<h4>¿De qué se trata tu idea?</h4>
+<p>{{ aspectos }}</p>
+
+<h4>¿Qué quierés comunicar?</h4>
+<p>{{ objetivoComunicar }}</p>
+
+<h4>¿Qué mensaje quieres dejar con tu idea?</h4>
+<p>{{ objetivo }}</p>
+
+<h4>Especifica tus necesidades</h4>
+
+{% if personajes %}
+    <h5>Personajes</h5>
+    <p>{{ personajes }}</p>
+{% endif %}
+
+{% if locaciones %}
+    <h5>Locaciones</h5>
+    <p>{{ locaciones }}</p>
+{% endif %}
+
+{% if fecha %}
+    <h5>Fecha</h5>
+    <p>{{ fecha }}</p>
+{% endif %}
+
+{% if dondePublicar %}
+    <h5>Donde publicar</h5>
+    <p>{{ dondePublicar }}</p>
+{% endif %}

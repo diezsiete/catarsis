@@ -1,11 +1,11 @@
-.slqmmg {
+section.slqmmg {
     padding-top: 100px;
     padding-bottom: 80px;
     background-color: #FDF5D5;
     text-align: center;
 }
 
-.slqmmg .section-title{
+section.slqmmg .section-title{
     background-image: url(../img/slqmmg-title-back.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -15,27 +15,27 @@
     padding-bottom: 80px;
 }
 
-.slqmmg .info{
+section.slqmmg .info{
     margin-top: 50px;
 }
 
-.slqmmg .image-container{
+section.slqmmg .image-container{
     margin-bottom: 40px;
 }
-.slqmmg .image-container img{
+section.slqmmg .image-container img{
     width:100%;
 }
 
-.slqmmg h4{
+section.slqmmg h4{
     font-size: 28px;
 }
-.slqmmg .bwf-logo-container{
+section.slqmmg .bwf-logo-container{
     width: 100%;
     text-align: center;
     margin-top: -100px;
 }
 
-.slqmmg .text-container{
+section.slqmmg .text-container{
     background-image: url(../img/slqmmg-text-back.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
 /*----------------------*/
 /*   CAPITULOS          */
 /*----------------------*/
-.slqmmg.capitulos{
+section.slqmmg.capitulos{
     text-align: left;
     padding-top: 0;
 }

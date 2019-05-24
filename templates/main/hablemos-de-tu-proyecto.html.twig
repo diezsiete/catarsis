@@ -1,0 +1,213 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/hablemos-de-tu-proyecto.css') }} ">
+{% endblock %}
+
+{% block body %}
+    <!-- ************************ -->
+    <!--   CONTACT FORM           -->
+    <!-- ************************ -->
+
+    <section class="hablemos">
+        <div class="hablemos-back-decor-tr"></div>
+        <div class="hablemos-back-decor-br"></div>
+        <div class="hablemos-back-decor-bl"></div>
+
+        <div class="container">
+            <div class="section-title">
+                <h2 data-sr>Cuéntanos <br> tus ideas</h2>
+            </div>
+        </div>
+        <!-- End container -->
+        <img src="{{ asset('img/hablemos/hablemos-back-decor-c.png') }}" alt="" class="back">
+
+        <div class="form container">
+
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <form class="contact-form form-black" id="hablemos-form"
+                          action="{{ path('hablemos_de_tu_proyecto_post') }}"
+                          method="post"
+                          data-all-fields-required-msg="Completa los campos requeridos"
+                          data-ajax-fail-msg="Datos no pudieron ser enviados"
+                          data-success-msg="Datos enviados exitosamente"
+                          data-aspectos-not-set-msg="Indica los aspectos mas importantes"
+                          data-objetivo_comunicar-not-set-msg="Indica el objetivo a comunicar"
+                          data-objetivo-not-set-msg="Indica el objetivo"
+                          data-nombre-not-set-msg="Indica tu nombre"
+                          data-email-not-set-msg="Indica tu correo">
+
+                        <div class="col-sm-12">
+                            <h3 class="que-producto-necesitas">
+                                ¿Qué Producto Necesitas?
+                            </h3>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <label class="control-label" for="input-video">
+                                    VIDEO (Especifícanos duración y cantidad de videos)
+                                </label>
+                                <textarea name="video" id="input-video"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <label class="control-label" for="input-fotografia">
+                                    FOTOGRAFÍA (Especifícanos cantidad de fotos)
+                                </label>
+                                <textarea name="fotografia" id="input-fotografia"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <label class="control-label" for="input-estrategia">
+                                    ESTRATEGIA DE COMUNICACIÓN
+                                </label>
+                                <textarea name="estrategia" id="input-estrategia"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <label class="control-label" for="input-grafica">
+                                    GRÁFICA
+                                </label>
+                                <textarea name="grafica" id="input-grafica"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <h3 class="de-que-se-trata">
+                                ¿De qué se trata tu idea?
+                            </h3>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <label class="control-label parrafo" for="input-aspectos">
+                                    En un párrafo breve, cuéntanos los aspectos más importantes de tu proyecto
+                                </label>
+                                <textarea name="aspectos" id="input-aspectos" class="form-control"></textarea>
+                                <div class="text-center"><p class="return-msg-input"></p></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3 class="que-quieres-comunicar">
+                                ¿Qué quierés comunicar?
+                            </h3>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <label class="control-label parrafo" for="input-comunicar">
+                                    Cúal es el objetivo de tu proyecto y qué te gustaría resaltar
+                                </label>
+                                <textarea name="objetivo_comunicar" id="input-comunicar"></textarea>
+                                <div class="text-center"><p class="return-msg-input"></p></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <h3 class="que-mensaje-quieres-dejar">
+                                ¿Qué mensaje quieres dejar con tu idea?
+                            </h3>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <label class="control-label parrafo" for="input-objetivo">
+                                    Cúal es el objetivo de tu proyecto
+                                </label>
+                                <textarea name="objetivo" id="input-objetivo"></textarea>
+                                <div class="text-center"><p class="return-msg-input"></p></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <h3 class="especifica-tus-necesidades">
+                                Especifica tus necesidades
+                            </h3>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <label class="control-label" for="input-personajes">
+                                    PERSONAJES (Quiénes son, a qué se dedican, su familia, qué estudian, etc.)
+                                </label>
+                                <textarea name="personajes" id="input-personajes"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <label class="control-label" for="input-locaciones">
+                                    LOCACIONES (En qué lugares se va a realizar la producción, institutos, casas de los
+                                    personajes, etc.)
+                                </label>
+                                <textarea name="locaciones" id="input-locaciones"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <label class="control-label" for="input-fecha">
+                                    Fecha de entrega
+                                </label>
+                                <input type="text" name="fecha" id="input-fecha">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <label class="control-label" for="input-donde-publicar">
+                                    ¿Dónde quieres publicar tus videos/fotografías?
+                                </label>
+                                <textarea name="donde_publicar" id="input-donde-publicar"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3 class="contacto">
+                                Contacto
+                            </h3>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <input class="contact-form-name" type="text" name="nombre" placeholder="Tu nombre:">
+                                <div class="text-center"><p class="return-msg-input"></p></div>
+                            </div>
+                        </div>
+                        <!-- End col-sm-12 -->
+                        <div class="col-sm-12">
+                            <div class="form-control">
+                                <input class="contact-form-email" type="text" name="email" placeholder="Tu email:">
+                                <div class="text-center"><p class="return-msg-input"></p></div>
+                            </div>
+                        </div>
+
+                        <!-- End col-sm-12 -->
+                        <div class="col-sm-12">
+                            <div class="text-center">
+                                <button class="btn">
+                                    <span>
+                                        Enviar<i class="fa fa-spin fa-spinner ajax-loader" style="display: none;"></i>
+                                    </span>
+                                </button>
+
+                            </div>
+                        </div>
+                        <!-- End  -->
+                        <div class="col-sm-12">
+                            <div class="text-center">
+                                <p class="return-msg">&nbsp;</p>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!-- End contact-form -->
+
+                </div>
+
+            </div>
+        </div>
+        <!-- End container -->
+    </section>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('scripts/hablemos-de-tu-proyecto.js') }}"></script>
+{% endblock %}
+
+

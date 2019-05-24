@@ -1,0 +1,82 @@
+h3{
+    font-size: 3em;
+    text-align: center;
+}
+.hablemos{
+    padding-top:150px;
+    padding-bottom:150px;
+    background: #F2F2F2;
+}
+.hablemos .container{
+    position:relative;
+}
+.hablemos img.back{
+    width:100%;
+    position:absolute;
+}
+.hablemos .section-title{
+    background-image: url(../img/hablemos/hablemos-title-back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: -340px;
+    padding-top: 280px;
+    margin-bottom: -280px;
+    padding-bottom: 280px;
+}
+
+.hablemos .form.container{
+    background: #FFFFFF;
+    padding-top: 30px;
+}
+
+.que-producto-necesitas{
+    background: url(../img/hablemos/hablemos-subtitle-back-green.png) no-repeat center center;
+}
+.de-que-se-trata{
+    background: url(../img/hablemos/hablemos-subtitle-back-orange.png) no-repeat center center;
+}
+.que-quieres-comunicar{
+    background: url(../img/hablemos/hablemos-subtitle-back-pink.png) no-repeat center center;
+}
+.que-mensaje-quieres-dejar {
+    background: url(../img/hablemos/hablemos-subtitle-back-blue.png) no-repeat center center;
+}
+.especifica-tus-necesidades {
+    background: url(../img/hablemos/hablemos-subtitle-back-yellow.png) no-repeat center center;
+}
+.contacto{
+    background: url(../img/hablemos/hablemos-subtitle-back-green.png) no-repeat center center;
+}
+
+label.parrafo {
+    display: block;
+    text-align: center;
+}
+.hablemos-back-decor-tr {
+    position:absolute;
+    top:10%;
+    width:100%;
+    height: 679px;
+    background: url(../img/hablemos/hablemos-back-decor-tr.png) no-repeat right center;
+}
+.hablemos-back-decor-br {
+    position:absolute;
+    top: 58%;
+    width:100%;
+    height: 288px;
+    background: url(../img/hablemos/hablemos-back-decor-br.png) no-repeat right center;
+}
+.hablemos-back-decor-bl {
+    position:absolute;
+    top: 70%;
+    width:100%;
+    height: 288px;
+    background: url(../img/hablemos/hablemos-back-decor-br.png) no-repeat left center;
+}
+.hablemos-back-decor-c {
+    position:absolute;
+    top: 10%;
+    width:100%;
+    height: 1022px;
+    background: url(../img/hablemos/hablemos-back-decor-c.png) no-repeat center center;
+}

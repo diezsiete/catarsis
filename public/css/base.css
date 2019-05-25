@@ -370,7 +370,7 @@ ol.list-none {
     padding: 0;
 }
 .sf-menu > li {
-    margin-left: 38px;
+    margin-left: 58px;
 }
 .sf-menu > li > a {
     font-size: 16px;
@@ -381,25 +381,55 @@ ol.list-none {
     position: relative;
     padding: 2px 0;
 }
+
 .sf-menu > li > a::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 3px;
+    bottom: -6px;
+    left: -19px;
+    height: 15px;
     display: block;
     width: 0;
-    background-color: #d5eeef;
     transition: all 0.35s ease-in-out;
 }
+
+.sf-menu > li.home > a::after {
+    background: url("../img/current-menu-item-home.png") no-repeat;
+}
+
+.sf-menu > li.nuestro_metodo > a::after {
+    background: url("../img/current-menu-item-nuestro-metodo.png") no-repeat;
+    bottom: -7px;
+    height: 17px;
+    left: -37px;
+}
+
+.sf-menu > li.slqmmg > a::after {
+    background: url("../img/current-menu-item-home.png") no-repeat;
+    left: -10px;
+}
+.sf-menu > li.hablemos_de_tu_proyecto > a::after {
+    background: url("../img/current-menu-item-hablemos-de-tu-proyecto.png") no-repeat;
+    bottom: -7px;
+    height: 17px;
+    left: -34px;
+}
+
 .sf-menu > li > a:hover {
     text-decoration: none;
 }
 .sf-menu > li:hover > a::after,
 .sf-menu > li.current-menu-item > a::after,
 .sf-menu > li.sfHover > a::after {
-    width: 24px;
+    width: 250px;
 }
+
+.sf-menu > li.hablemos_de_tu_proyecto:hover > a::after,
+.sf-menu > li.hablemos_de_tu_proyecto.current-menu-item > a::after,
+.sf-menu > li.hablemos_de_tu_proyecto.sfHover > a::after {
+    width: 310px;
+}
+
 .crazy-border {
     position: absolute;
     top: 0;

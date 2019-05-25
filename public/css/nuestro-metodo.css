@@ -141,6 +141,9 @@ section.equipo .section-title p{
 section.girl-pwr {
     text-align: center;
 }
+.girl-pwr .title-container {
+    z-index: 2;
+}
 section.girl-pwr h1{
     font-size: 280px;
     background-image: url(../img/girl-pwr-title-back.png);

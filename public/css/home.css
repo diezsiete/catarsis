@@ -251,6 +251,16 @@ video.home{
     z-index:3;
     margin-bottom: 30px;
 }
+.quienes .decor-tl{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -4px;
+    height: 600px;
+    background-image: url(../img/quienes-aliados-decor-l.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
 .quienes .section-title{
     margin-bottom: 0;
 }
@@ -265,20 +275,29 @@ video.home{
     background-position: center bottom;
     background-repeat: no-repeat;
     padding-bottom: 164px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     margin-top: -126px;
     padding-top: 74px;
 }
 
-.avatar-wrap.colpatria{
-    padding-top: 22px;
-    padding-bottom: 22px;
+.avatar-wrap {
+    height: 150px;
+    vertical-align: center;
 }
-.avatar-wrap.casatoro{
-    padding-top: 17px;
-    padding-bottom: 18px;
+.vertical-align-helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.avatar-wrap img{
+    vertical-align: middle;
+    max-height: 150px;
 }
 
+.owl-carousel .owl-item img{
+    display: inline;
+    width: auto;
+}
 
 
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -301,17 +320,13 @@ video.home{
     margin-top: -120px;
 }
 
-.aliados .owl-item.angela-villota{
-    margin-top: 30px;
-}
-
 .aliados .decor-tl{
     position: absolute;
     width: 100%;
     top: -20px;
     left: 0;
     height: 365px;
-    background-image: url(../img/aliados-decor-tl.png);
+    background-image: url(../img/quienes-aliados-decor-l.png);
     background-repeat: no-repeat;
     background-position: bottom left;
 }
@@ -325,7 +340,20 @@ video.home{
     background-repeat: no-repeat;
     background-position: top right;
 }
-
+.laura-mogollon{
+    font-family: times sans-serif;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    vertical-align: middle;
+    max-height: 150px;
+    display: inline;
+    width: auto;
+}
+.aliados a:hover {
+    color: #9f81a3;
+    text-decoration: underline;
+}
 /*----------------------*/
 /*   SLIDER             */
 /*----------------------*/
@@ -336,6 +364,9 @@ video.home{
 .quienes-wrap .owl-item, .aliados-wrap .owl-item {
     width: 100%;
     border-right: 1px solid #fbaf3f;
+}
+.aliados-wrap .owl-item {
+    border-right: 1px solid black;
 }
 
 
@@ -394,6 +425,9 @@ video.home{
     }
 }
 
+.owl-controls{
+    margin-top: 60px;
+}
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: #c3d7aa !important;
 }
@@ -406,6 +440,7 @@ video.home{
 .owl-aliados-slider.owl-theme .owl-dots .owl-dot.active span, .owl-aliados-slider.owl-theme .owl-dots .owl-dot:hover span {
     background: #d5eeef !important;
 }
+
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*                                                    CONTACTO                                                        */

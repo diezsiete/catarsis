@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #F8D5E5;
+    background-color: #f8d4e5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
@@ -10,7 +10,7 @@ body{
     line-height: 1.8;
     font-size: 16px;
     letter-spacing: 0.5px;
-    color: #1C1551;
+    color: #1c1550;
 }
 a {
     text-decoration: none;
@@ -23,7 +23,7 @@ a:focus {
     outline: none;
 }
 a:hover {
-    color: #7BCDDB;
+    color: #fbaf3f;
     text-decoration: underline;
 }
 h1,
@@ -36,7 +36,7 @@ h6 {
     line-height: .7em;
     font-family: 'Authenia-Textured', selimaregular, serif;
     margin: 15px 0;
-    color: #1C1551;
+    color: #1c1550;
     text-transform: none;
     letter-spacing: 0;
 }
@@ -55,7 +55,7 @@ h6 {
 input,
 textarea {
     border: none;
-    border-bottom: 1px solid #1C1551;
+    border-bottom: 1px solid #1c1550;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -65,11 +65,11 @@ textarea {
     max-width: 100%;
     background-color: transparent;
     padding: 13px 0;
-    color: #1C1551;
+    color: #1c1550;
     margin-bottom: 30px;
 }
 input::placeholder, textarea::placeholder {
-    color: #1C1551;
+    color: #1c1550;
     padding-left: 0;
 }
 .has-error input, .has-error textarea{
@@ -112,7 +112,7 @@ ol.list-none {
     bottom: 30px;
     right: 30px;
     font-size: 24px;
-    background-color: #7BCDDB;
+    background-color: #d5eeef;
     color: #fff !important;
     overflow: hidden;
     text-align: center;
@@ -153,7 +153,7 @@ ol.list-none {
     left: 0;
     right: 0;
     display: block;
-    background: #F8D5E5;
+    background: #f8d4e5;
     z-index: 888;
 }
 .frame-line.top-frame {
@@ -207,14 +207,14 @@ ol.list-none {
     display: inline-block;
     text-transform: uppercase;
     text-align: center;
-    color: #1C1551;
+    color: #1c1550;
     font-size: 16px;
     font-weight: 700;
     padding: 20px 70px;
     position: relative;
     outline: none;
     background-color: transparent;
-    border: 3px solid #1C1551;
+    border: 3px solid #1c1550;
 }
 .btn span {
     position: relative;
@@ -222,7 +222,7 @@ ol.list-none {
 }
 .btn::after {
     content: '';
-    background-color: #1C1551;
+    background-color: #1c1550;
     top: 0;
     left: 0;
     right: 0;
@@ -259,7 +259,7 @@ ol.list-none {
     top: -85%;
     left: 50%;
     z-index: 22;
-    background-color: #0de7cb;
+    background-color: #d5eeef;
     transition: all 0.2s ease-in-out;
 }
 .btn.line-vert:hover::before {
@@ -275,7 +275,7 @@ ol.list-none {
     left: 100%;
     z-index: 22;
     margin-left: -10px;
-    background-color: #0de7cb;
+    background-color: #d5eeef;
     transition: all 0.2s ease-in-out;
 }
 .btn.line-hor:hover::before {
@@ -299,7 +299,7 @@ ol.list-none {
     left: 0;
     right: 0;
     z-index: 889;
-    background-color: #F8D5E5;
+    background-color: #f8d4e5;
 }
 
 .crazy-navbar .container {
@@ -332,22 +332,22 @@ ol.list-none {
     left: 0;
     z-index: 99;
     background-color: #fff;
-    border-top: 3px solid #0de7cb;
+    border-top: 3px solid #d5eeef;
 }
 .sf-menu ul li a {
     display: block;
     text-transform: uppercase;
-    color: #171717;
+    color: #1c1550;
     line-height: 35px;
     font-size: 13px;
     letter-spacing: 1px;
 }
 .sf-menu ul li a:hover {
     text-decoration: none;
-    color: #0de7cb;
+    color: #d5eeef;
 }
 .sf-menu ul li.current-page-item a {
-    color: #0de7cb;
+    color: #d5eeef;
 }
 .sf-menu > li {
     float: left;
@@ -377,7 +377,7 @@ ol.list-none {
     display: block;
     font-weight: 700;
     text-transform: uppercase;
-    color: #161616;
+    color: #1c1550;
     position: relative;
     padding: 2px 0;
 }
@@ -389,7 +389,7 @@ ol.list-none {
     height: 3px;
     display: block;
     width: 0;
-    background-color: #0de7cb;
+    background-color: #d5eeef;
     transition: all 0.35s ease-in-out;
 }
 .sf-menu > li > a:hover {
@@ -407,7 +407,7 @@ ol.list-none {
     right: 0;
     bottom: 0;
     z-index: -1;
-    border-bottom: 3px solid #161616;
+    border-bottom: 3px solid #1c1550;
 }
 @media (min-width: 1500px) {
     .crazy-border {
@@ -422,7 +422,7 @@ ol.list-none {
 }
 .mobile-menu-wrap nav {
     background-color: #fff;
-    border-bottom: 3px solid #171717;
+    border-bottom: 3px solid #1c1550;
 }
 .mobile-menu-wrap nav ul {
     margin: 0;
@@ -433,11 +433,11 @@ ol.list-none {
 }
 .mobile-menu-wrap nav ul li > a {
     display: block;
-    color: #171717;
+    color: #1c1550;
 }
 .mobile-menu-wrap nav ul li:hover >a,
 .mobile-menu-wrap nav ul li.current-menu-item >a {
-    color: #0de7cb;
+    color: #d5eeef;
     text-decoration: none;
 }
 .mobile-menu-wrap nav ul li:hover > ul {
@@ -450,7 +450,7 @@ ol.list-none {
     display: none;
 }
 .mobile-menu-wrap nav ul li.current-page-item a {
-    color: #0de7cb;
+    color: #d5eeef;
 }
 .open-menu {
     float: right;
@@ -485,7 +485,7 @@ ol.list-none {
 .burger-icon i::after {
     width: 30px;
     height: 3px;
-    background-color: #161616;
+    background-color: #1c1550;
     display: block;
     transition-duration: 0.3s;
     transition-property: background-color, transform;
@@ -547,10 +547,10 @@ footer .catarsis-logo{
 .footer-social ul li a {
     display: block;
     font-size: 22px;
-    color: #1C1551;
+    color: #1c1550;
 }
 .footer-social a:hover {
-    color: #7BCDDB;
+    color: #d5eeef;
     text-decoration: none;
 }
 .footer-social a:hover i {

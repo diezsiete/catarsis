@@ -204,7 +204,7 @@ video.home{
 /*----------------------*/
 /** FLECHAS NAVEGACION **/
 .mfp-arrow-right .mfp-b, .mfp-arrow-right:before {
-    border-left: 27px solid #3F3F3F;
+    border-left: 27px solid #1c1550;
 }
 .mfp-arrow .mfp-b, .mfp-arrow:before {
     border-top-width: 21px;
@@ -234,7 +234,7 @@ video.home{
 }
 .mfp-arrow-left .mfp-b, .mfp-arrow-left:before {
     margin-left: 25px;
-    border-right: 27px solid #3F3F3F;
+    border-right: 27px solid #1c1550;
 }
 .mfp-arrow-left .mfp-a, .mfp-arrow-left:after {
     border-right: 17px solid #FFF;
@@ -275,7 +275,7 @@ video.home{
 /*                                                       ALIADOS                                                      */
 /*--------------------------------------------------------------------------------------------------------------------*/
 .aliados {
-    background: #C4D7AA;
+    background: #c3d7aa;
     position: relative;
 }
 .aliados .container{
@@ -336,7 +336,7 @@ video.home{
     padding: 0 4px;
     font-size: 50px;
     line-height: 30px;
-    color: #FBB040;
+    color: #fbaf3f;
     cursor: pointer;
     position: absolute;
     top: 70%;
@@ -360,7 +360,7 @@ video.home{
 }
 
 .quienes-nav i:hover {
-    color: #C4D7AA;
+    color: #c3d7aa;
 }
 .quienes-nav i.lnr-arrow-left, .aliados-nav i.lnr-arrow-left {
     left: 30px;
@@ -385,16 +385,16 @@ video.home{
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #C4D7AA !important;
+    background: #c3d7aa !important;
 }
 .owl-theme .owl-dots .owl-dot span {
-    background: #FBB040 !important;
+    background: #fbaf3f !important;
     width: 20px !important;
     height: 20px !important;
 }
 
 .owl-aliados-slider.owl-theme .owl-dots .owl-dot.active span, .owl-aliados-slider.owl-theme .owl-dots .owl-dot:hover span {
-    background: #D6EEF0 !important;
+    background: #d5eeef !important;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------*/

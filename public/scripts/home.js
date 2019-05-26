@@ -41,6 +41,19 @@ jQuery.noConflict()(function ($) {
             items: items,
             loop: true,
             dots: true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav: false,
+                },
+                600:{
+                    items: items,
+                },
+            },
+            autoplay:true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause:true
         });
 
 

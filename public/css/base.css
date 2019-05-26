@@ -467,7 +467,7 @@ ol.list-none {
 }
 .mobile-menu-wrap nav ul li:hover >a,
 .mobile-menu-wrap nav ul li.current-menu-item >a {
-    color: #d5eeef;
+    color: #9f81a3;
     text-decoration: none;
 }
 .mobile-menu-wrap nav ul li:hover > ul {
@@ -630,3 +630,25 @@ footer .catarsis-logo{
     }
 }
 
+
+@media (max-width: 480px) {
+    .info-block-wrap .info-block {
+        padding: 0;
+    }
+    h2, .lo-que-hacemos h2 {
+        font-size: 100px;
+        transform: rotate(0) !important;
+    }
+
+
+
+    footer .catarsis-logo{
+        text-align: center;
+    }
+    .footer-copy p {
+        margin-left: 0;
+    }
+    .footer-inner {
+        padding: 30px 0 30px 0;
+    }
+}

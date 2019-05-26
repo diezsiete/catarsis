@@ -16,6 +16,7 @@ video.home{
     background-position: center top;
     margin-bottom: 30px;
     position: relative;
+    padding-bottom: 150px;
 }
 .info-block-wrap {
     position: relative;
@@ -23,7 +24,7 @@ video.home{
 .info-block-wrap .info-block {
     padding: 30px 80px;
 }
-.info-block-wrap .info-block h2 {
+.por-que .info-block-wrap .info-block h2 {
     transform: rotate(-6deg);
     background-color: transparent;
     background-image: url(../img/por-que-back-title.png);
@@ -73,9 +74,6 @@ video.home{
 @media (max-width: 480px) {
     .info-block-wrap .image-block {
         height: 400px;
-    }
-    .info-block-wrap .info-block {
-        padding: 40px;
     }
 }
 
@@ -430,19 +428,10 @@ video.home{
 .quienes-nav i.lnr-arrow-right, .aliados-nav i.lnr-arrow-right {
     right: 30px;
 }
-@media (max-width: 768px) {
-    .quienes-wrap .avatar-wrap img, .aliados-wrap .avatar-wrap img {
-        /*height: 100px;*/
-        width: 100px;
-    }
-}
+
 @media (max-width: 480px) {
     .quienes-nav, .aliados-nav {
         display: none;
-    }
-    .quienes-wrap .avatar-wrap img, .aliados-wrap .avatar-wrap img {
-        /*height: 80px;*/
-        width: 80px;
     }
 }
 
@@ -523,4 +512,122 @@ video.home{
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index:2;
+}
+
+@media (max-width: 480px) {
+    .info-block-wrap .info-block {
+        padding: 0;
+    }
+    h2, .lo-que-hacemos h2 {
+        font-size: 100px;
+        transform: rotate(0) !important;
+    }
+
+
+    .por-que {
+        padding-bottom: 20px;
+    }
+    .por-que .decor-tr{
+        display: none;
+    }
+    .por-que .col-md-7{
+        padding-right: 0;
+    }
+    .por-que .info-block-wrap .info-block .text-content{
+        margin-right:0;
+        padding-right:0;
+    }
+
+    .lo-que-hacemos{
+        padding-bottom: 115px;
+    }
+    .lo-que-hacemos .row{
+        margin-right: 0;
+    }
+    .lo-que-hacemos .container{
+        padding-right: 0;
+    }
+    .lo-que-hacemos .video-container img{
+        width:100%;
+    }
+    .lo-que-hacemos .video-cont{
+        width: 100%;
+        overflow: hidden;
+        height: 283px;
+    }
+    .lo-que-hacemos .video-cont video {
+        width: 540px !important;
+        display: block;
+        left: -90px;
+        position: absolute;
+        top: 0;
+    }
+    .lo-que-hacemos .decor-tl{
+        display:none;
+    }
+
+    .lo-que-hacemos .decor-tr{
+        display:none;
+    }
+
+    .lo-que-hacemos .decor-b {
+        display:none;
+    }
+    .lo-que-hacemos .decor-bl {
+        display:none;
+    }
+    .lo-que-hacemos .video-container {
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .quienes h2{
+        background-position: center top;
+        padding-bottom: 70px;
+        margin-top: -126px;
+        padding-top: 62px;
+    }
+    .quienes .decor-tl {
+        left: -30px;
+    }
+    .quienes .owl-carousel .owl-item img{
+        width: 80%;
+    }
+    .quienes-wrap .owl-item, .aliados-wrap .owl-item {
+        border-right: none;
+    }
+    .quienes .decor-tl{
+        display:none;
+    }
+
+
+    .aliados .decor-tl{
+        display: none;
+    }
+    .aliados .section-title{
+        margin-bottom: 30px;
+    }
+
+
+    .contact-form{
+        padding-top: 0;
+    }
+    .contact-form .decor-tr, .contact-form .decor-bl, .contact-form .decor-br{
+        display: none;
+    }
+    .contact-form a.btn{
+        margin-top: 30px;
+    }
+
+
+    footer .catarsis-logo{
+        text-align: center;
+    }
+    .footer-copy p {
+        margin-left: 0;
+    }
+    .footer-inner {
+        padding: 30px 0 30px 0;
+    }
 }

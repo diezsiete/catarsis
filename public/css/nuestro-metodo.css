@@ -34,7 +34,8 @@
 }
 .nuestro-metodo .decor{
     position: absolute;
-    width: 100%;
+    left:0;
+    right:0;
     background-repeat: no-repeat;
 }
 
@@ -66,17 +67,26 @@
     background-position: left top;
 }
 
+.nuestro-metodo .damos-vida {
+    position: relative;
+    z-index: 2;
+}
+.nuestro-metodo .aliados {
+    position: relative;
+    z-index: 1;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*                                                     EQUIPO                                                         */
 /*--------------------------------------------------------------------------------------------------------------------*/
-section.equipo {
+.equipo {
     background: #FDF5D5;
 }
 .equipo .container.title {
     z-index: 2;
     position: relative;
 }
-section.equipo h2 {
+.equipo h2 {
     background-image: url(../img/equipo-title-back.png);
     background-position: 300px center;
     background-repeat: no-repeat;
@@ -91,7 +101,7 @@ section.equipo h2 {
     transform: rotate(0deg);
 }
 
-section.equipo .section-title p{
+.equipo .section-title p{
     position: relative;
     z-index:3;
 }
@@ -138,13 +148,13 @@ section.equipo .section-title p{
     background: #d5eeef;
 }
 
-section.girl-pwr {
+.girl-pwr {
     text-align: center;
 }
 .girl-pwr .title-container {
     z-index: 2;
 }
-section.girl-pwr h1{
+.girl-pwr h1{
     font-size: 280px;
     background-image: url(../img/girl-pwr-title-back.png);
     background-position: center top;
@@ -157,7 +167,7 @@ section.girl-pwr h1{
     z-index: 2;
 }
 
-section.girl-pwr p{
+.girl-pwr p{
     font-size: 1.5em;
     background-image: url(../img/girl-pwr-text-back.png);
     background-position: 40px 50px;
@@ -172,4 +182,50 @@ section.girl-pwr p{
     margin-right: -350px;
     padding-right: 350px;
     z-index: 1;
+}
+
+
+@media (max-width: 480px) {
+    .nuestro-metodo .container.title, .girl-pwr .title-container, .girl-pwr .col-md-6{
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .nuestro-metodo section.last{
+        padding-bottom:0;
+    }
+
+
+    .equipo h2 {
+        background-position: center center;
+    }
+    .equipo .container.emails{
+        margin-top: 0;
+    }
+
+    .girl-pwr{
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+    .girl-pwr h1{
+        font-size: 100px;
+        margin-bottom:0;
+        padding-bottom:0;
+        background-size: contain;
+        margin-top:0;
+        padding-top:0;
+    }
+    .girl-pwr p {
+        font-size: 1.1em;
+        background-position: center -150px;
+        background-size: 850px;
+        margin-top: -400px;
+        padding-top: 400px;
+        margin-bottom: -100px;
+        padding-bottom: 100px;
+        margin-left:0;
+        padding-left:0;
+        margin-right:0;
+        padding-right:0;
+    }
 }

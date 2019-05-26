@@ -16,8 +16,9 @@ class MainController extends AbstractController
     /**
      * @Route("/", name="home")
      */
-    public function home()
+    public function home($emailToSend)
     {
+        dump($emailToSend);
         return $this->render('main/home.html.twig');
     }
 

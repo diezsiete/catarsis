@@ -1,11 +1,11 @@
-section.slqmmg {
+.slqmmg {
     padding-top: 100px;
     padding-bottom: 80px;
     background-color: #fcf5d4;
     text-align: center;
 }
 
-section.slqmmg .section-title{
+.slqmmg .section-title{
     background-image: url(../img/slqmmg-title-back.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -15,27 +15,27 @@ section.slqmmg .section-title{
     padding-bottom: 80px;
 }
 
-section.slqmmg .info{
+.slqmmg .info{
     margin-top: 50px;
 }
 
-section.slqmmg .image-container{
+.slqmmg .image-container{
     margin-bottom: 40px;
 }
-section.slqmmg .image-container img{
+.slqmmg .image-container img{
     width:100%;
 }
 
-section.slqmmg h4{
+.slqmmg h4{
     font-size: 28px;
 }
-section.slqmmg .bwf-logo-container{
+.slqmmg .bwf-logo-container{
     width: 100%;
     text-align: center;
     margin-top: -100px;
 }
 
-section.slqmmg .text-container{
+.slqmmg .text-container{
     background-image: url(../img/slqmmg-text-back.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@ section.slqmmg .text-container{
 /*----------------------*/
 /*   CAPITULOS          */
 /*----------------------*/
-section.slqmmg.capitulos{
+.slqmmg.capitulos{
     text-align: left;
     padding-top: 0;
 }
@@ -72,4 +72,18 @@ section.slqmmg.capitulos{
 }
 .capitulo-item h6 a:hover {
     text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .container.title{
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .slqmmg .bwf-logo-container img{
+        width: 100%;
+    }
+    .slqmmg .text-container {
+        background-size: cover;
+    }
 }

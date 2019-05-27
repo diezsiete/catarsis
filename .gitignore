@@ -13,7 +13,7 @@
 ###< symfony/web-server-bundle ###
 
 
-/public/img/
-/public/fonts/
-/public/video/
-/public/vendors/
+/public_html/img/
+/public_html/fonts/
+/public_html/video/
+/public_html/vendors/

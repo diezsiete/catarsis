@@ -48,7 +48,7 @@ class MainController extends AbstractController
     /**
      * @Route("/contacto-post", name="contacto_post")
      */
-    public function contactoPost(Swift_Mailer $mailer, Request $request)
+    public function contactoPost(Swift_Mailer $mailer, Request $request, $emailToSend)
     {
         $name = $request->request->get('name');
         $email = $request->request->get('email');
@@ -57,7 +57,7 @@ class MainController extends AbstractController
         $message = (new Swift_Message("Mensaje de $name [$email]"))
             ->setFrom('paginaweb@catarsis.com.co')
             //contactanos@catarsis.com.co
-            ->setTo('guerrerojosedario@gmail.com.co')
+            ->setTo($emailToSend)
             ->setBody($message, 'text/html');
         $mailer->send($message);
 
@@ -67,11 +67,11 @@ class MainController extends AbstractController
     /**
      * @Route("/hablemos-de-tu-proyecto-post", name="hablemos_de_tu_proyecto_post")
      */
-    public function hablemosDeTuProyectoPost(Swift_Mailer $mailer, Request $request)
+    public function hablemosDeTuProyectoPost(Swift_Mailer $mailer, Request $request, $emailToSend)
     {
         $message = (new Swift_Message("Brief pagina web"))
             ->setFrom('paginaweb@catarsis.com.co')
-            ->setTo('guerrerojosedario@gmail.com')
+            ->setTo($emailToSend)
             ->setBody($this->renderView('emails/brief.html.twig', [
                 'video' => $request->request->get('video'),
                 'fotografia' => $request->request->get('fotografia'),

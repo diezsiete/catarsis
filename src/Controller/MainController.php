@@ -18,7 +18,6 @@ class MainController extends AbstractController
      */
     public function home($emailToSend)
     {
-        dump($emailToSend);
         return $this->render('main/home.html.twig');
     }
 

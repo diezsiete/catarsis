@@ -1,8 +1,22 @@
-section.slqmmg {
+div.slqmmg{
+    background-color: #fcf5d4;
+}
+.slqmmg .dots{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("../img/slqmmg-dots.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index:1;
+}
+.slqmmg section {
+    position:relative;
     padding-top: 100px;
     padding-bottom: 80px;
-    background-color: #fcf5d4;
     text-align: center;
+    z-index:2;
 }
 
 .slqmmg .section-title{
@@ -19,23 +33,23 @@ section.slqmmg {
     margin-top: 50px;
 }
 
-.slqmmg .image-container{
+.slqmmg .info .image-container{
     margin-bottom: 40px;
 }
-.slqmmg .image-container img{
+.slqmmg .info .image-container img{
     width:100%;
 }
 
-.slqmmg h4{
+.slqmmg .info h4{
     font-size: 28px;
 }
-.slqmmg .bwf-logo-container{
+.slqmmg .info .bwf-logo-container{
     width: 100%;
     text-align: center;
     margin-top: -100px;
 }
 
-.slqmmg .text-container{
+.slqmmg .info .text-container{
     background-image: url(../img/slqmmg-text-back.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -45,10 +59,15 @@ section.slqmmg {
     padding-bottom: 80px;
     float: left;
 }
+.slqmmg .info p{
+    font-size: 1.1em;
+}
+
+
 /*----------------------*/
 /*   CAPITULOS          */
 /*----------------------*/
-.slqmmg.capitulos{
+.slqmmg .capitulos{
     text-align: left;
     padding-top: 0;
 }
@@ -69,6 +88,7 @@ section.slqmmg {
 .capitulo-item h6 {
     text-transform: uppercase;
     margin: 15px 0;
+    font-weight: 600;
 }
 .capitulo-item h6 a:hover {
     text-decoration: none;

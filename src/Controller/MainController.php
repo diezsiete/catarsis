@@ -16,10 +16,11 @@ class MainController extends AbstractController
     /**
      * @Route("/", name="home")
      */
-    public function home($emailToSend)
+    public function home()
     {
         return $this->render('main/home.html.twig');
     }
+
 
     /**
      * @Route("/nuestro-metodo", name="nuestro_metodo")
@@ -55,8 +56,7 @@ class MainController extends AbstractController
         $message = $request->request->get('message');
 
         $message = (new Swift_Message("Mensaje de $name [$email]"))
-            ->setFrom('paginaweb@catarsis.com.co')
-            //contactanos@catarsis.com.co
+            ->setFrom('contactanos@catarsis.com.co')
             ->setTo($emailToSend)
             ->setBody($message, 'text/html');
         $mailer->send($message);

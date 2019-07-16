@@ -94,7 +94,7 @@ video.home{
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 .lo-que-hacemos{
-    background: #DEF2F2;
+    background: #D5EEEF;
     position: relative;
     padding-top: 60px;
     padding-bottom: 160px;
@@ -104,10 +104,10 @@ video.home{
     background-image: url(../img/lo-que-hacemos-titulo-back.png);
     background-position: center bottom;
     background-repeat: no-repeat;
-    margin-top: -150px;
+    margin-top: -110px;
     padding-top: 150px;
     margin-bottom: -135px;
-    padding-bottom: 167px;
+    padding-bottom: 120px;
     margin-left: -120px;
     padding-left: 120px;
     z-index: 2;
@@ -116,67 +116,62 @@ video.home{
     transform: rotate(-6deg);
     font-size: 160px;
 }
-.lo-que-hacemos .video-container{
-    position: relative;
-    margin-top:60px;
+
+
+.lo-que-hacemos .main-video {
+    background-image: url("../img/lo-que-hacemos-video-back2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 110px 15px 150px;
+
 }
-.lo-que-hacemos .video-container img{
-    width: 130%;
-    position: absolute;
-    left: -15%;
-    top:-25%;
-    z-index: 1;
+.lo-que-hacemos .main-video iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 104%;
+    height: 104%;
+    z-index: 3;
 }
 
-.lo-que-hacemos video.main {
-    width: 100%;
-    transition: 1s opacity;
+.lo-que-hacemos .brush {
+    position:relative;
+    padding: 0;
+    margin-bottom: 30px
+}
+.lo-que-hacemos .brush video {
+    width: 97%;
     z-index: 3;
     position:relative;
 }
-
-.lo-que-hacemos .video-cont {
-    position: relative;
-}
-.lo-que-hacemos .video-cont video {
-    width: 100%    !important;
-    height: auto   !important;
-    display: block;
-}
-.lo-que-hacemos .video-cont .seccion {
+.lo-que-hacemos .brush img{
     position: absolute;
-    z-index: 3;
-    left: 20%;
-    right: 20%;
-    height:23%;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 4;
+}
+
+.lo-que-hacemos .brush .link {
+    position: absolute;
+    z-index: 5;
+    top: 10%;
+    left: 3%;
+    right: 5%;
+    height:80%;
     cursor: pointer;
 }
-.lo-que-hacemos .video-cont .nuestro-contenido {
-    /*border: 1px solid red;*/
-    top: 12%;
-}
-.lo-que-hacemos .video-cont .video {
-    /*border: 1px solid green;*/
-    top: 37%;
-    height:25%;
-}
-.lo-que-hacemos .video-cont .fotografia {
-    /*border: 1px solid blue;*/
-    top: 64%;
-}
-
-.lo-que-hacemos .video-cont a{
+.lo-que-hacemos .brush .link a{
     display: none;
 }
-.lo-que-hacemos .video-cont a.primero{
+.lo-que-hacemos .brush .link a.primero{
     display: block;
     height: 100%;
 }
-.lo-que-hacemos .video-cont .seccion.fotografia a{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
+
+
+
 
 .lo-que-hacemos .decor-tl{
     position: absolute;
@@ -273,7 +268,7 @@ video.home{
 .quienes .decor-tl{
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 65px;
     left: -4px;
     height: 600px;
     background-image: url(../img/quienes-aliados-decor-l.png);
@@ -348,6 +343,7 @@ video.home{
     background-image: url(../img/quienes-aliados-decor-l.png);
     background-repeat: no-repeat;
     background-position: bottom left;
+    z-index: 10
 }
 
 .aliados .decor-tr{
@@ -380,6 +376,7 @@ video.home{
     position: relative;
     text-align: center;
 }
+
 .quienes-wrap .owl-item, .aliados-wrap .owl-item {
     width: 100%;
     border-right: 1px solid #fbaf3f;
@@ -388,10 +385,19 @@ video.home{
     border-right: 1px solid black;
 }
 
+.quienes-wrap .owl-item.active .colpatria.first{
+    text-align: right;
+    padding-right: 45px;
+}
+.quienes-wrap .owl-item.active .colpatria.second, .quienes-wrap .owl-item.active .casatoro.second{
+    text-align: left;
+    padding-left: 45px;
+}
 
 .quienes-wrap .avatar-wrap, .aliados-wrap .avatar-wrap {
     display: inline-block;
 }
+
 
 .quienes-nav i, .aliados-nav i {
     padding: 0 4px;
@@ -422,10 +428,17 @@ video.home{
 .quienes-nav i:hover {
     color: #c3d7aa;
 }
-.quienes-nav i.lnr-arrow-left, .aliados-nav i.lnr-arrow-left {
+
+.quienes-nav i.lnr-arrow-left {
+    left: 90px;
+}
+.quienes-nav i.lnr-arrow-right {
+    right: 90px;
+}
+.aliados-nav i.lnr-arrow-left {
     left: 30px;
 }
-.quienes-nav i.lnr-arrow-right, .aliados-nav i.lnr-arrow-right {
+.aliados-nav i.lnr-arrow-right {
     right: 30px;
 }
 
@@ -476,7 +489,11 @@ video.home{
 }
 
 .contact-form .btn-col{
-    margin-top: 50px;
+    margin-top: 100px;
+}
+
+.contact-form .btn.enviar{
+    margin-right: 60px;
 }
 
 .contact-form .decor-tr{
@@ -512,6 +529,21 @@ video.home{
     background-repeat: no-repeat;
     background-position: bottom right;
     z-index:2;
+}
+
+.contact-form .decor-bottom {
+    position: relative;
+    height: 100px;
+    z-index: 901;
+    margin-top: -100px
+}
+.contact-form .dbl{
+    position: absolute;
+    left: 0;
+}
+.contact-form .dbr{
+    position: absolute;
+    right: 0;
 }
 
 @media (max-width: 480px) {

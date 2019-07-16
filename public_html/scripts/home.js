@@ -1,5 +1,5 @@
 jQuery.noConflict()(function ($) {
-    $('.lo-que-hacemos .seccion').each(function(){
+    $('.lo-que-hacemos .link').each(function(){
         var playlist = $(this).data('playlist');
         if(playlist) {
             $(this).magnificPopup({
@@ -36,7 +36,7 @@ jQuery.noConflict()(function ($) {
 
     function owl_carousel(carouselName, items){
 
-        let currentItem = 0;
+
         const carousel = $('.owl-'+carouselName+'-slider').owlCarousel({
             items: items,
             loop: true,
@@ -53,29 +53,48 @@ jQuery.noConflict()(function ($) {
             },
             autoplay:true,
             autoplayTimeout: 5000,
-            autoplayHoverPause:true
+            autoplayHoverPause:true,
+            checkVisibility: false,
+
+            onInitialized: function() {
+                // los items visibles tendran clases first y second para ajustar posicion
+                this._pipe.push({
+                    'filter': ['position'],
+                    'run': $.proxy(() => {
+                        let classNames = ['first', 'second'];
+                        this.$stage.children('.active').each((key, element) => {
+                            if(classNames[key]) {
+                                $(element).children(":first").removeClass(classNames.join(" ")).addClass(classNames[key])
+                            }
+                        })
+                    }, this)
+                });
+            }
         });
 
-
+        let currentItem = 0;
         $('.'+carouselName+'-nav .lnr-arrow-left').on('click', function () {
-            // carousel.trigger('prev.owl.carousel');
-            currentItem--;
-            carousel.trigger('to.owl.carousel', [currentItem]);
+            carousel.trigger('prev.owl.carousel');
+            // currentItem--;
+            // carousel.trigger('to.owl.carousel', [currentItem]);
 
         });
 
         $('.'+carouselName+'-nav .lnr-arrow-right').on('click', function () {
-            // carousel.trigger('next.owl.carousel');
-            currentItem++;
-            carousel.trigger('to.owl.carousel', [currentItem])
+            carousel.trigger('next.owl.carousel');
+            // currentItem++;
+            // carousel.trigger('to.owl.carousel', [currentItem])
         });
+
+
 
     }
 
 
     $(window).on('resize', function() {
-        owl_carousel('quienes', 2);
-        owl_carousel('aliados', 3);
+        // owl_carousel('quienes', 2);
+        //owl_carousel('aliados', 3);
     });
 
 });
+

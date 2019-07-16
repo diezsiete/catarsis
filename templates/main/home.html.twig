@@ -10,7 +10,7 @@
     <!--   HOME VIDEO             -->
     <!-- ************************ -->
     <video poster="{{ asset('video/home-portada.png') }}" playsinline autoplay muted loop class="home">
-        <source src="{{ asset('video/home-portada2.mp4.mp4') }}" type="video/mp4">
+        <source src="{{ asset('video/home-portada3.mp4') }}" type="video/mp4">
         {#        <source src="{{ asset('video/home-portada2.webmhd.webm') }}" type="video/webm"> #}
 
     </video>
@@ -77,54 +77,85 @@
                 <h2>Lo que <br>hacemos</h2>
             </div>
 
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 video-container">
-                    <img src="{{ asset('img/lo-que-hacemos-video-back.png') }}" rel="video back">
-                    <video poster="{{ asset('video/reel.webmhd.jpg') }}" class="main" playsinline autoplay muted loop>
-                        <source src="{{ asset('video/reel.webmhd.webm') }}" type="video/webm">
-                        {#                        <source src="{{ asset('video/reel.mp4') }}" type="video/mp4">#}
 
-                    </video>
+            <div class="row">
+                <div class="col-md-12 main-video">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div style="padding:56.25% 0 0 0;position:relative;">
+                                <iframe src="https://player.vimeo.com/video/212768549?autoplay=0&color=f8d4e5&title=0&byline=0&portrait=0"
+                                        frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            </div>
+                            <script src="https://player.vimeo.com/api/player.js"></script>
+
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+            <div class="row brushes pt60">
+                <div class="col-md-12 brush">
+                    <video poster="{{ asset('video/lo-que-hacemos-nuestras-ideas.jpg') }}"
+                           playsinline autoplay muted loop>
+                        <source src="{{ asset('video/lo-que-hacemos-nuestras-ideas.mp4') }}" type="video/mp4">
+                    </video>
+                    <img src="{{ asset('video/lo-que-hacemos-brush.png') }}" alt="video-brush"/>
+                    <div class="link" data-playlist="PLIJlJGz4I00_Vb7tUtD3eD7HH817qisCE" >
+                        <a href="https://www.youtube.com/watch?v=eEnub0eLYxg" class="primero"></a>
+                        <a href="https://www.youtube.com/watch?v=PT3LbzZOXRw"></a>
+                        <a href="https://www.youtube.com/watch?v=SIU-gGRXf3c"></a>
+                        <a href="https://www.youtube.com/watch?v=EGGMTYuBe1M"></a>
+                        <a href="https://www.youtube.com/watch?v=B7NHqC_QJd0"></a>
+                        <a href="https://www.youtube.com/watch?v=Q-_0PZQ9G1A"></a>
+                        <a href="https://www.youtube.com/watch?v=jGKSnfB_5ls"></a>
+                        <a href="https://www.youtube.com/watch?v=OwRhEmWqo9c"></a>
+                        <a href="https://www.youtube.com/watch?v=syd0JV3kL4I"></a>
+                        <a href="https://www.youtube.com/watch?v=eEnub0eLYxg"></a>
+                    </div>
+                </div>
+
+                <div class="col-md-12 brush">
+                    <video poster="{{ asset('video/lo-que-hacemos-nuestro-trabajo.jpg') }}"
+                           playsinline autoplay muted loop>
+                        <source src="{{ asset('video/lo-que-hacemos-nuestro-trabajo.mp4') }}" type="video/mp4">
+                    </video>
+                    <img src="{{ asset('video/lo-que-hacemos-brush.png') }}" alt="video-brush"/>
+                    <div class="link" data-playlist="PLIJlJGz4I00_88QkgABsGdOzCAQRpPz_m" >
+                        <a href="https://www.youtube.com/watch?v=XM4sAq6sXOg" class="primero"></a>
+                        <a href="https://www.youtube.com/watch?v=kV1OKvKItBs"></a>
+                        <a href="https://www.youtube.com/watch?v=XHXte6xFM4E"></a>
+                        <a href="https://www.youtube.com/watch?v=C9le-ATiGRU"></a>
+                        <a href="https://www.youtube.com/watch?v=feSkQY51zsI"></a>
+                        <a href="https://www.youtube.com/watch?v=XWHTtbzu1Lk"></a>
+                        <a href="https://www.youtube.com/watch?v=uK2fka6M8TY"></a>
+                        <a href="https://www.youtube.com/watch?v=uayYawoom0E"></a>
+                        <a href="https://www.youtube.com/watch?v=w8xzRF4YrKg"></a>
+                        <a href="https://www.youtube.com/watch?v=ZeGSnBjMFe0"></a>
+                        <a href="https://www.youtube.com/watch?v=iNmIemvJCTE"></a>
+                        <a href="https://www.youtube.com/watch?v=9jSOD9lfKrY"></a>
+                        <a href="https://www.youtube.com/watch?v=1RNAvuYXpYg"></a>
+                        <a href="https://www.youtube.com/watch?v=aMhZCY2HZHY"></a>
+                        <a href="https://www.youtube.com/watch?v=vPvtrplEyYk"></a>
+                        <a href="https://www.youtube.com/watch?v=IY2kTapx6Yk"></a>
+                    </div>
+                </div>
+
+                <div class="col-md-12 brush">
+                    <video poster="{{ asset('video/lo-que-hacemos-fotografia.jpg') }}"
+                           playsinline autoplay muted loop>
+                        <source src="{{ asset('video/lo-que-hacemos-fotografia.mp4') }}" type="video/mp4">
+                    </video>
+                    <img src="{{ asset('video/lo-que-hacemos-brush.png') }}" alt="video-brush"/>
+                    <div class="link">
+                        <a href="https://laura-mogollon612.myportfolio.com/projects" target="_blank" class="primero">&nbsp;</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="video-cont">
-            <div class="seccion nuestro-contenido" data-playlist="PLIJlJGz4I00_Vb7tUtD3eD7HH817qisCE">
-                <a href="https://www.youtube.com/watch?v=PT3LbzZOXRw" class="primero"></a>
-                <a href="https://www.youtube.com/watch?v=SIU-gGRXf3c" class=""></a>
-                <a href="https://www.youtube.com/watch?v=EGGMTYuBe1M" class=""></a>
-                <a href="https://www.youtube.com/watch?v=B7NHqC_QJd0" class=""></a>
-                <a href="https://www.youtube.com/watch?v=Q-_0PZQ9G1A" class=""></a>
-                <a href="https://www.youtube.com/watch?v=jGKSnfB_5ls" class=""></a>
-                <a href="https://www.youtube.com/watch?v=OwRhEmWqo9c" class=""></a>
-                <a href="https://www.youtube.com/watch?v=syd0JV3kL4I" class=""></a>
-                <a href="https://www.youtube.com/watch?v=eEnub0eLYxg" class=""></a>
-            </div>
-            <div class="seccion video" data-playlist="PLIJlJGz4I00_88QkgABsGdOzCAQRpPz_m">
-                <a href="https://www.youtube.com/watch?v=kV1OKvKItBs" title="Test caption 1" class="primero"></a>
-                <a href="https://www.youtube.com/watch?v=XHXte6xFM4E"></a>
-                <a href="https://www.youtube.com/watch?v=C9le-ATiGRU"></a>
-                <a href="https://www.youtube.com/watch?v=feSkQY51zsI"></a>
-                <a href="https://www.youtube.com/watch?v=XWHTtbzu1Lk"></a>
-                <a href="https://www.youtube.com/watch?v=uK2fka6M8TY"></a>
-                <a href="https://www.youtube.com/watch?v=uayYawoom0E"></a>
-                <a href="https://www.youtube.com/watch?v=w8xzRF4YrKg"></a>
-                <a href="https://www.youtube.com/watch?v=ZeGSnBjMFe0"></a>
-                <a href="https://www.youtube.com/watch?v=iNmIemvJCTE"></a>
-                <a href="https://www.youtube.com/watch?v=9jSOD9lfKrY"></a>
-                <a href="https://www.youtube.com/watch?v=1RNAvuYXpYg"></a>
-                <a href="https://www.youtube.com/watch?v=aMhZCY2HZHY"></a>
-                <a href="https://www.youtube.com/watch?v=vPvtrplEyYk"></a>
-                <a href="https://www.youtube.com/watch?v=IY2kTapx6Yk"></a>
-            </div>
-            <div class="seccion fotografia">
-                <a href="https://laura-mogollon612.myportfolio.com/projects" target="_blank">&nbsp;</a>
-            </div>
-            <video poster="{{ asset('video/lo-que-hacemos.jpg') }}" playsinline autoplay muted loop>
-                <source src="{{ asset('video/lo-que-hacemos.mp4.mp4') }}" type="video/mp4">
-                {#        <source src="{{ asset('video/home-portada2.webmhd.webm') }}" type="video/webm"> #}
-            </video>
-        </div>
+
+
         <div class="decor-b"></div>
     </section>
 
@@ -147,31 +178,30 @@
             <div class="row">
 
                 <div class="owl-quienes-slider">
-                    <div class="owl-item">
-
-                        <div class="avatar-wrap colpatria">
+                    <div class="colpatria first">
+                        <div class="avatar-wrap">
                             <span class="vertical-align-helper"></span>
                             <img src="{{ asset('img/quienes-logos/colpatria.png') }}" alt="avatar">
                         </div>
                     </div>
                     <!-- End owl-item -->
 
-                    <div class="owl-item">
-                        <div class="avatar-wrap casatoro">
+                    <div class="casatoro second">
+                        <div class="avatar-wrap">
                             <span class="vertical-align-helper"></span>
                             <img src="{{ asset('img/quienes-logos/casatoro.png') }}" alt="avatar">
                         </div>
                     </div>
                     <!-- End owl-item -->
 
-                    <div class="owl-item">
-                        <div class="avatar-wrap instinto">
+                    <div>
+                        <div class="avatar-wrap">
                             <img src="{{ asset('img/quienes-logos/instinto.png') }}" alt="avatar">
                         </div>
                     </div>
                     <!-- End owl-item -->
 
-                    <div class="owl-item">
+                    <div>
                         <div class="avatar-wrap">
                             <span class="vertical-align-helper"></span>
                             <img src="{{ asset('img/quienes-logos/mimos.jpg') }}" alt="avatar">
@@ -179,7 +209,7 @@
                     </div>
                     <!-- End owl-item -->
 
-                    <div class="owl-item">
+                    <div>
                         <div class="avatar-wrap">
                             <span class="vertical-align-helper"></span>
                             <img src="{{ asset('img/quienes-logos/oskperu.png') }}" alt="avatar">
@@ -187,7 +217,7 @@
                     </div>
                     <!-- End owl-item -->
 
-                    <div class="owl-item">
+                    <div>
                         <div class="avatar-wrap">
                             <span class="vertical-align-helper"></span>
                             <img src="{{ asset('img/quienes-logos/pinzon-pinzon.png') }}" alt="avatar">
@@ -195,7 +225,7 @@
                     </div>
                     <!-- End owl-item -->
 
-                    <div class="owl-item">
+                    <div>
                         <div class="avatar-wrap">
                             <span class="vertical-align-helper"></span>
                             <img src="{{ asset('img/quienes-logos/grants.png') }}" alt="avatar">
@@ -203,21 +233,21 @@
                     </div>
                     <!-- End owl-item -->
 
-                    <div class="owl-item">
+                    <div>
                         <div class="avatar-wrap marcali">
                             <img src="{{ asset('img/quienes-logos/marcali.png') }}" alt="avatar">
                         </div>
                     </div>
                     <!-- End owl-item -->
 
-                    <div class="owl-item">
+                    <div>
                         <div class="avatar-wrap">
                             <img src="{{ asset('img/quienes-logos/jac.png') }}" alt="avatar">
                         </div>
                     </div>
                     <!-- End owl-item -->
 
-                    <div class="owl-item">
+                    <div>
                         <div class="avatar-wrap">
                             <span class="vertical-align-helper"></span>
                             <img src="{{ asset('img/quienes-logos/reebok.png') }}" alt="avatar">
@@ -391,8 +421,8 @@
 
     <section class="contact-form">
         <div class="decor-tr"></div>
-        <div class="decor-br"></div>
-        <div class="decor-bl"></div>
+{#        <div class="decor-br"></div>#}
+{#        <div class="decor-bl"></div>#}
         <div class="container title">
             <div class="text-center mb40">
                 <h2 class="c-white uppercase">Hablemos de<br>tu proyecto</h2>
@@ -414,14 +444,11 @@
                           data-success-msg="Mensaje enviado exitosamente.">
                         <div class="col-sm-12">
                             <div class="form-control">
-
                                 <input
                                         class="contact-form-name"
                                         type="text"
                                         name="name"
                                         placeholder="Tu nombre:">
-
-
                             </div>
                         </div>
                         <!-- End col-sm-12 -->
@@ -439,7 +466,7 @@
                         <!-- End col-sm-12 -->
                         <div class="col-sm-12">
                             <div class="form-control">
-                                <textarea class="contact-form-message" name="message"
+                                <textarea class="contact-form-message" name="message" rows="3"
                                           placeholder="Cuéntanos sobre tu proyecto:"></textarea>
                             </div>
                         </div>
@@ -447,7 +474,7 @@
                         <div class="col-sm-12 btn-col">
                             <div class="text-center">
 
-                                <button class="btn">
+                                <button class="btn enviar">
 											<span>Enviar<i class="fa fa-spin fa-spinner ajax-loader"
                                                            style="display: none;"></i>
 											</span>
@@ -469,6 +496,12 @@
 
                 </div>
 
+            </div>
+            <div class="row">
+                <div class="col-sm-12 decor-bottom">
+                    <img src="{{ asset('img/contacto-decor-bl.png') }}" alt="" class="dbl">
+                    <img src="{{ asset('img/contacto-decor-br.png') }}" alt="" class="dbr">
+                </div>
             </div>
         </div>
         <!-- End container -->
